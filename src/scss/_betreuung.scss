@@ -1,0 +1,19 @@
+    .sectionBetreuung {
+        padding: 64px 16px;
+        h1 {
+            padding-bottom: 24px;
+        }
+        h4 {
+            padding-bottom: 24px;
+        }
+        p {
+            padding-bottom: 40px;
+        }
+        &:nth-child(odd) {
+            background-color: white;
+        }
+        &>* {
+            max-width: 800px;
+            margin: auto;
+        }
+    }

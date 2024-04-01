@@ -1,0 +1,22 @@
+.button-primary {
+    background-color: var(--button-primary-default);
+    padding: 4px 16px;
+    height: 40px;
+    border-radius: 11px;
+    border-style: none;
+    align-self: flex-start;
+    transition: ease-in 0.1s;
+    a {
+        display: flex;
+        align-items: center;
+    }
+    .button-svg {
+        width: 32px;
+    }
+}
+
+.button-primary:hover {
+    background-color: var(--button-primary-hover);
+    transition: ease-in 0.1s;
+    cursor: pointer;
+}
