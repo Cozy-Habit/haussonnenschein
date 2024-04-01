@@ -18,7 +18,7 @@
                 padding: 16px 32px;
                 gap: 40px;
                 background-color: var(--navbar_background);
-                a:-webkit-any-link {
+                a:any-link {
                     transition: 0.3s;
                     text-decoration: none;
                 }

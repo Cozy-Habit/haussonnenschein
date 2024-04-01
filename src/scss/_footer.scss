@@ -15,7 +15,7 @@
             flex-wrap: wrap;
             gap: 32px;
             justify-content: space-around;
-            a:-webkit-any-link {
+            a:any-link {
                 transition: 0.3s;
                 text-decoration: none;
             }

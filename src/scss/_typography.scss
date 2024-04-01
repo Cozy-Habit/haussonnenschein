@@ -2,21 +2,21 @@
     font-size: 24px;
     font-family: 'Lilita One', cursive;
     color: var(--accent_1);
-    a:-webkit-any-link {
+    a:any-link {
         color: var(--accent_1);
     }
-    a:-webkit-any-link:hover {
+    a:any-link:hover {
         color: var(--accent_3);
         cursor: pointer;
         transition: 0.3s;
     }
-    a:-webkit-any-link.active {
+    a:any-link.active {
         text-transform: uppercase;
         color: var(--accent_3);
     }
 }
 
-a:-webkit-any-link {
+a:any-link {
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:-webkit-any-link {
     span {
         font-weight: 400;
     }
-    a:-webkit-any-link {
+    a:any-link {
         font-size: 16px;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
