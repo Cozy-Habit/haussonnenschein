@@ -84,3 +84,35 @@
         padding-top: 40px;
     }
 }
+
+.header {
+    .navbar ul {
+        right: -100%;
+        transition: all 0.4s linear;
+        &.open {
+            right: 0
+        }
+    }
+    .hamburger_container {
+        .burger1 {
+            transform: rotate(0);
+        }
+        .burger2 {
+            opacity: 1;
+        }
+        .burger3 {
+            transform: rotate(0);
+        }
+        &.open {
+            .burger1 {
+                transform: rotate(40deg) translateX(4px) translateY(-4px);
+            }
+            .burger2 {
+                opacity: 0;
+            }
+            .burger3 {
+                transform: rotate(-40deg) translateX(4px) translateY(4px);
+            }
+        }
+    }
+}
