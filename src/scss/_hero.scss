@@ -30,7 +30,7 @@ main .main_container>div:nth-child(1) {
         overflow-x: hidden;
         img {
             //For some reasons this img 100% makes it work that the images overflow on both sides ... duh, why?
-            width: 100%;
+            width: auto;
             max-width: 260px;
         }
         .hero_02,

@@ -4,62 +4,40 @@ import Link from "next/link";
 import Clouds from "./Clouds";
 import React from "react";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { useIsMobile, useWindowSize } from "@/hooks"
+
+function MenuItem({ href, label }: { href: string, label: string }) {
+    const pathname = usePathname();
+    // remove trailing slash
+    if (href.endsWith("/") && href !== "/") {
+        href = href.slice(0, -1);
+    }
+    const isActive = pathname == href;
+    const activeClassName = isActive ? "active" : "";
+    return (
+        <li>
+            <Link className={`menuItem ${activeClassName}`} href={href}>
+                {label}
+            </Link>
+        </li>
+    )
+}
 
 export default function Navbar() {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-    const [isMobile, setIsMobile] = useState(true)
+    const isMobile = useIsMobile();
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     }
 
-    //choose the screen size 
-    const handleResize = () => {
-        if (window.innerWidth < 820) {
-            setIsMobile(true)
-
-        } else {
-            setIsMobile(false)
-        }
-
-    }
-
     //CHANGING BETWEEN MOBILE AND DESKTOP
     useEffect(() => { //is it bad that this thing gets rerendered constantly? isn't it normal? should I do something about it?
-        window.addEventListener("resize", handleResize)
         if (!isMobile) setHamburgerOpen(false);
-
-        /*document.querySelectorAll(".menuItem").forEach((value2) => {
-            value2.classList.remove('active');
-        })
-
-        const currentUrl = window.location.href;
-        const regExp = RegExp(/Kontakt/i);
-
-        if (regExp.test(currentUrl))
-            console.log("yep");*/
-
     }, [isMobile]);
-
-    useEffect(() => {
-
-        //menuItems auswählen und dann die Children durch forEach mit evenListener ausstatten, wobei eine RegExp die id des jeweiligen menuItems nimmt und in der URL auf Übereinstimmung vergleicht. 
-        //Kann ich die Funktion auslagen, sodass Footer genauso funktioniert?
-        document.querySelectorAll(".menuItem").forEach((value) => {
-            value.addEventListener('click', () => {
-
-
-                document.querySelectorAll(".menuItem").forEach((value2) => {
-                    value2.classList.remove('active');
-                })
-
-                value.classList.add('active');
-
-            })
-        })
-    }, [])
 
     return (
         <>
@@ -72,11 +50,16 @@ export default function Navbar() {
                         <div className="burger burger3"></div>
                     </div>
                     <ul id="menuItems">
-                        <li><Link className="menuItem active" href="/">Home</Link></li>
+                        {/*<li><Link className="menuItem active" href="/">Home</Link></li>
                         <li><Link className="menuItem" href="/Tagesmutter">Tagesmutter</Link></li>
                         <li><Link className="menuItem" href="/Raeumlichkeiten">Räumlichkeiten</Link></li>
                         <li><Link className="menuItem" href="/Betreuung">Betreuung</Link></li>
-                        <li><Link className="menuItem" href="/Kontakt">Kontakt</Link></li>
+    <li><Link className="menuItem" href="/Kontakt">Kontakt</Link></li>*/}
+                        <MenuItem href="/" label="Home" />
+                        <MenuItem href="/Tagesmutter" label="Tagesmutter" />
+                        <MenuItem href="/Raeumlichkeiten" label="Räumlichkeiten" />
+                        <MenuItem href="/Betreuung" label="Betreuung" />
+                        <MenuItem href="/Kontakt" label="Kontakt" />
                     </ul>
                 </nav>
 

@@ -9,10 +9,10 @@ export default function Hero() {
             {/*TESTIMONIALS*/}
             <div className="main_gallery_container">
                 <div className="main_gallery">
-                    <img className="hero_01" src="/assets/hero_01.svg" alt="Kind mit Kinderschminke im Gesicht" />
-                    <img className="hero_02" src="/assets/hero_02.svg" alt="Zwei lachende Kinder" />
-                    <img className="hero_03" src="/assets/hero_03.svg" alt="Kind verkleidet als Hund an Karneval" />
-                    <img className="hero_04" src="/assets/hero_04.svg" alt="Lachendes Kind auf dem Spielplatz" />
+                    <img className="hero_01" src="/assets/hero_01.png" alt="Kind mit Kinderschminke im Gesicht" />
+                    <img className="hero_02" src="/assets/hero_02.png" alt="Zwei lachende Kinder" />
+                    <img className="hero_03" src="/assets/hero_03.png" alt="Kind verkleidet als Hund an Karneval" />
+                    <img className="hero_04" src="/assets/hero_04.png" alt="Lachendes Kind auf dem Spielplatz" />
                 </div>
             </div>
         </>
