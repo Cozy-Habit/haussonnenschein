@@ -14,7 +14,7 @@ export default function Impressum() {
                     <p>Sandra Diner</p>
                     <p>Niederpleiserstr. 97, 53757 Sankt Augustin</p>
                     <p>0163 6912191</p>
-                    <p>haus.sonnenschein@web.de</p>
+                    <p>kindertagespflege-haus-sonnenschein@web.de</p>
                     <p>Freiberufler</p>
                 </div>
             </div>

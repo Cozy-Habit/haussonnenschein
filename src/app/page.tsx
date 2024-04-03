@@ -67,13 +67,11 @@ export default function Home() {
         headline_alt="Betreuung Überschrift"
         isTitle={false}
         title_text=""
-        content_text={<>Die Betreuung findet in meinem Einfamilienhaus statt. Die Kinder können sich im Wohnzimmer und Esszimmer spielerisch austoben.
+        content_text={<>Meine Betreuung ist sehr vielseitig und fassettenreich. Es gibt einen gewohnten Tagesablauf von der Morgenbegrüßung bis zur Abholung am Nachmittag. <br /><br />
 
-          <br /> <br /> Im Wohnzimmer werden Snacks als auch das Mittagessen gemeinsam eingenommen.
+          Mit abwechslungsreichen Snacks und Mittagessen, als auch vom Wetter abhängenden Tagesprogramm. <br /><br />
 
-          <br /> <br /> In den Schlafräumen können die Kinder in den Betten ihren Mittagsschlaf machen.
-
-          <br /> <br /> Dazu können die Kinder unter meiner Aufsicht in den großzügigen Hinterhof und Garten.</>}
+          Hierbei wird jedes Kind mitsamt seiner Stärken und Schwächen betreut und durch diverse Spiele und Aktivitäten individuell gefördert.</>}
 
         isButton={true}
         button_link="/Betreuung"

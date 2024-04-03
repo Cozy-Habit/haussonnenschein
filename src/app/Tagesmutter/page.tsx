@@ -90,7 +90,7 @@ export default function Tagesmutter() {
                 title_text="Unser Familienhund"
                 content_text={<>Ein weiteres Mitglied der Familie ist unser 7 Jahre alter Familienhund Dean oder auch Deany genannt.
                     <br></br><br></br>
-                    Er ist er auch ein absoluter Kindermagnet und mein Assistent in der täglichen Betreuung.
+                    Er ist ein absoluter Kindermagnet und mein Assistent in der täglichen Betreuung.
 
                     <br></br><br></br>Zudem ist er eine sehr liebevolle und ruhige Seele und ist den Umgang mit Kindern seit er klein ist gewohnt.
 
