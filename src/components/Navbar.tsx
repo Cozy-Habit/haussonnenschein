@@ -9,12 +9,13 @@ import { useIsMobile, useWindowSize } from "@/hooks"
 
 function MenuItem({ href, label }: { href: string, label: string }) {
     const pathname = usePathname();
-    // remove trailing slash
-    /*if (href.endsWith("/") && href !== "/") {
-        href = href.slice(0, -1);
-    }*/
-    const isActive = pathname == href;
-    const activeClassName = isActive ? "active" : "";
+    const [activeClassName, setActiveClassName] = useState('');
+
+    useEffect(() => {
+        const isActive = pathname == href;
+        setActiveClassName(isActive ? "active" : "");
+    }, [href, pathname]);
+
     return (
         <li>
             <Link className={`menuItem ${activeClassName}`} href={href}>
