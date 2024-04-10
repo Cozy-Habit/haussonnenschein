@@ -12,7 +12,13 @@ function MenuItem({ href, label }: { href: string, label: string }) {
     const [activeClassName, setActiveClassName] = useState('');
 
     useEffect(() => {
-        const isActive = pathname == href;
+        // remove trailing slash
+        let myPathname = pathname;
+        if (pathname.endsWith("/") && pathname !== "/") {
+            myPathname = pathname.slice(0, -1);
+        }
+        // active or not active thats the question
+        const isActive = myPathname == href;
         setActiveClassName(isActive ? "active" : "");
     }, [href, pathname]);
 
