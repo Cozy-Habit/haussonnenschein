@@ -1,50 +1,9 @@
-import { findInputError } from './findInputError';
-import { isFormInvalid } from './isFormInvalid';
+import { findInputError } from '../../findInputError';
+import { isFormInvalid } from '../../isFormInvalid';
 import { useFormContext } from 'react-hook-form';
 import { AnimatePresence } from 'framer-motion';
-
-// import { AnimatePresence, motion } from ' framer-motion';
 import { MdError } from 'react-icons/md';
 import { motion } from 'framer-motion';
-
-// export const Input = ({ text, type, id, classname, small, message_validation}) => {
-
-//     const { register } = useFormContext();
-
-//     if(!small){
-//     return(
-//         <div className="input-text">
-//             <label htmlFor={id}>
-//                 {text}
-//             </label>
-//             <input id={id} type={type} className={"input " + classname}
-//             {...register(id, {
-//                 required: {
-//                   value: true,
-//                   message: 'required',
-//                 },
-//               })}
-//               />
-//         </div>
-//     );
-//     }else{
-//     return(
-//         <div className="small-input-text">
-//             <label htmlFor={id}>
-//                 {text}
-//             </label>
-//             <input id={id} type={type} className={"input " + classname} 
-//             {...register(id, {
-//                 required: {
-//                   value: true,
-//                   message: 'required',
-//                 },
-//               })}
-//               />
-//         </div>
-//     );
-//     }
-// }
 
 export const Input = ({ name, label, type, id, placeholder, validation, small, textarea }) => {
   const {

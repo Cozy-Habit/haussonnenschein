@@ -1,5 +1,5 @@
-import Button from "./Button";
-import Headline from "./Headline";
+import Button from "../Button";
+import Headline from "../Headline";
 
 function HeadlineExists(props: { src: string, alt: string }) {
     return (

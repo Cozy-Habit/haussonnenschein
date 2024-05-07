@@ -1,10 +1,3 @@
-/* 
-Props{
-    Text:
-}
-*/
-
-/*How can I add icons via props to stay flexible? */
 import Link from "next/link";
 
 export default function Submit(props: {

@@ -1,6 +1,6 @@
 "use client"; //enables to use hooks clientSide
-import Input from '@/components/Input';
-import Submit from '@/components/Submit';
+import Input from '@/components/Form/Input/Input';
+import Submit from '@/components/Form/Submit';
 import { useForm, FormProvider } from 'react-hook-form';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -127,33 +127,4 @@ export default function Kontakt() {
             </div>
         </>
     );
-
-
-    // return(
-    //     
-
-
-    //     {/* FORM */}
-    //     <FormProvider {...methods}>
-    //     <form onSubmit={e => e.preventDefault()}
-    //     noValidate
-    //     className="container">
-    //         
-
-
-
-
-
-
-
-
-    //         <Button onClick={() => {
-    //             methods.handleSubmit(data => {
-    //                 console.log(data)
-    //                 });
-    //         }} text="Anfrage absenden"/>
-    //     </form>
-    //     </FormProvider>
-    //     
-    // );
 }
