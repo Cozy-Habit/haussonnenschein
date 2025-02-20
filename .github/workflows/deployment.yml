@@ -21,4 +21,5 @@ jobs:
         run: npm run build
         shell: bash
       - name: Deploy artifacts
-        run: pwd
+        run: |
+          scp -r ./out ${{secrets.STRATO_USERNAME}}@ssh.strato.de
