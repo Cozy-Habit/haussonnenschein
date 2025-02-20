@@ -11,15 +11,16 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - name: Create ssh key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan ssh.strato.de >> ~/.ssh/known_hosts
       - name: Build application
         run: npm run build
         shell: bash
       - name: Deploy artifacts
-        run: |
-          scp -r ./out ${{secrets.STRATO_USERNAME}}@ssh.strato.de
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          username: ${{ secrets.STRATO_USERNAME }}
+          server: "ssh.strato.de"
+          port: 22
+          local_path: "./out/*"
+          remote_path: "/home/${{secrets.STRATO_USERNAME}}/www/"
+          ssh_private_key: ${{secrets.SSH_PRIVATE_KEY}}
+          password: ${{ secrets.STRATO_PASSWORD }}
