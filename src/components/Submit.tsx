@@ -1,24 +1,21 @@
-/* 
-Props{
-    Text:
-}
-*/
-
-/*How can I add icons via props to stay flexible? */
-import Link from "next/link";
+import ButtonPrimary from "@/components/ButtonPrimary/ButtonPrimary";
+import Icon from "@/components/Icon/Icon";
 
 export default function Submit(props: {
-    text: string, icon: string, link: string, onClick: any
+  text: string;
+  link: string;
+  onClick: any;
 }) {
-    const text = props.text;
-    const icon = props.icon;
-    const link = props.link;
-    const onClick = props.onClick;
+  const text = props.text;
+  const link = props.link;
+  const onClick = props.onClick;
 
-    return (
-        <button type="submit" className="button-primary" onClick={onClick}>
-            <span>{text ? text : "Button"}</span>
-            {icon ? <img className="button-svg" src={icon} /> : ""}
-        </button>
-    );
+  return (
+    <ButtonPrimary
+      type="submit"
+      iconLeft={<Icon icon="arrow_right" />}
+      text={text}
+      onClick={onClick}
+    />
+  );
 }

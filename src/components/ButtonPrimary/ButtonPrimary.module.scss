@@ -1,0 +1,21 @@
+.buttonPrimary {
+  background-color: var(--button-primary-default);
+  padding: 4px 16px;
+  height: 40px;
+  border-radius: 11px;
+  border-style: none;
+  align-self: flex-start;
+  transition: ease-in 0.1s;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--button-primary-hover);
+    transition: ease-in 0.1s;
+    cursor: pointer;
+  }
+}

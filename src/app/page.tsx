@@ -1,7 +1,9 @@
+"user client";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import makeMetadata from "@/metadata";
 import "../scss/index.scss";
+import { Section as SectionTest } from "../components/index";
 
 export const metadata = makeMetadata("Home");
 
@@ -10,13 +12,11 @@ export default function Home() {
     <>
       <Hero />
       {/* <Hero/> */}
-      <Section
-        isHeadline={true}
-        headline_src="/assets/tagesmutter.svg"
-        headline_alt="Tagesmutter Überschrift"
-        isTitle={false}
-        title_text=""
-        content_text={
+      <SectionTest
+        isReverse={true}
+        backgroundColor="creme"
+        headline="Tagesmutter"
+        text={
           <>
             Mein Name ist Sandra Diner und ich bin 47 Jahre alt. Als
             ursprünglich gelernte und selbständige Raumausstatter-Meisterin habe
@@ -24,16 +24,9 @@ export default function Home() {
             lieben gelernt: <br /> <br /> Die Kindertagespflege
           </>
         }
-        isButton={true}
-        button_link="/Tagesmutter"
-        button_text="Mehr über Sandra"
-        button_icon="/assets/arrow_right.svg"
-        button_onClick=""
-        isImage={true}
-        image_link="/assets/sandra_01.jpeg"
-        image_alt="Tagesmutter spielt mit Kind im Garten"
-        reversed={false}
-        whiteBackground={true}
+        image={}
+        buttonText="Mehr über Sandra"
+        buttonHref="/Tagesmutter"
       />
 
       <Section

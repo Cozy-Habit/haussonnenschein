@@ -1,89 +1,79 @@
 .navbar {
-    font-size: 24px;
-    font-family: 'Lilita One', cursive;
+  font-size: 24px;
+  font-family: "Lilita One", cursive;
+  color: var(--accent_1);
+  a:any-link {
     color: var(--accent_1);
-    a:any-link {
-        color: var(--accent_1);
-    }
-    a:any-link:hover {
-        color: var(--accent_3);
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    a:any-link.active {
-        text-transform: uppercase;
-        color: var(--accent_3);
-    }
+  }
+  a:any-link:hover {
+    color: var(--accent_3);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  a:any-link.active {
+    text-transform: uppercase;
+    color: var(--accent_3);
+  }
 }
 
 a:any-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--accent_1);
+  span {
+    font-weight: 400;
+  }
+  a:any-link {
     font-size: 16px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
+    cursor: pointer;
     color: var(--accent_1);
-    span {
-        font-weight: 400;
-    }
-    a:any-link {
-        font-size: 16px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        cursor: pointer;
-        color: var(--accent_1);
-    }
+  }
 }
 
 body {
-    color: var(--accent_1);
+  color: var(--accent_1);
 }
 
 h1 {
-    font-size: 40px;
-    font-family: 'Lilita One', cursive;
-    word-wrap: break-word;
+  font-size: 40px;
+  font-family: "Lilita One", cursive;
+  word-wrap: break-word;
 }
 
 h2 {
-    font-size: 24px;
-    font-family: 'Lilita One', cursive;
+  font-size: 24px;
+  font-family: "Lilita One", cursive;
 }
 
 h3 {
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 
 h4 {
-    font-size: 24px;
-    font-family: 'Lilita One', cursive;
+  font-size: 24px;
+  font-family: "Lilita One", cursive;
 }
 
 h5 {
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
 }
 
 p,
 label,
 span {
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    padding: 0;
-    margin: 0;
-}
-
-.button-primary {
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    a {
-        color: white
-    }
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
 }
