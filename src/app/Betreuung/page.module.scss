@@ -1,0 +1,18 @@
+.sectionWrapper{
+    padding: 64px 16px;
+
+    &:nth-child(odd){
+        background-color: white;
+    }
+}
+
+.section{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media (min-width: 820px) {
+        width: 790px;
+    }
+}

@@ -1,13 +1,13 @@
-import Gallery from "@/components/Gallery";
-import Title from "@/Title"
-import Headline from "@/components/Headline";
+import { Gallery, Headline } from "@/components";
 
 export default function Raeumlichkeiten() {
-    return (
-        <>
-            <Title title="Räumlichkeiten" />
-            <Headline src="/assets/räumlichkeiten.svg" alt="Räumlichkeiten Überschrift" />
-            <Gallery />
-        </>
-    );
+	return (
+		<>
+			<Headline
+				src="/assets/headlines/räumlichkeiten.svg"
+				alt="Räumlichkeiten"
+			/>
+			<Gallery />
+		</>
+	);
 }

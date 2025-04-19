@@ -4,9 +4,8 @@ import Submit from '@/components/Submit';
 import { useForm, FormProvider } from 'react-hook-form';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import validation from './validation'
-import Title from "@/Title"
-import Headline from '@/components/Headline';
+import validation from './validation';
+import {Headline} from '@/components';
 
 
 //react-hook-form needs to be installed first
@@ -46,11 +45,10 @@ export default function Kontakt() {
 
     return (
         <>
-            <Title title="Kontakt" />
             <span className="nothing"></span>
             <div className='main-input-container'>
                 {/* Überschrift */}
-                <Headline src="/assets/kontakt.svg" alt="Kontakt Überschrift" />
+                <Headline src="/assets/headlines/kontakt.svg" alt="Kontakt" />
 
                 <br></br>
                 <br></br>

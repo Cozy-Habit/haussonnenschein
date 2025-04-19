@@ -11,7 +11,7 @@ interface CommonProps {
 
 export interface BaseButtonProps extends ButtonOwnProps, CommonProps {
   onClick: (event: MouseEvent<HTMLElement>) => void;
-  type?: "submit";
+  type?: "submit" | 'button';
 }
 
 export interface LinkProps extends CommonProps {

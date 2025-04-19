@@ -1,0 +1,10 @@
+.layout{
+    @media (min-width: 820px){
+        &__main{
+            margin-top: 120px;
+        }
+    }
+    &__main {
+        flex-grow: 1;
+    }
+}

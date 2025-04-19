@@ -1,0 +1,29 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    &__images{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: linear-gradient(0deg, #fff 0 50%, var(--main_background) 50% 100%);
+        width: 100%;
+        z-index: -1;
+        height: 500px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__img2{
+        position: relative;
+        bottom: 0;
+    }
+    &__img3{
+        position: relative;
+        bottom: 0;
+    }
+}
