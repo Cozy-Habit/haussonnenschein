@@ -1,5 +1,6 @@
 import { Section, Headline } from "@/components";
 import Title from "@/Title";
+import Image from "next/image";
 
 export default function Tagesmutter() {
 	return (
@@ -24,7 +25,14 @@ export default function Tagesmutter() {
 						zu verbringen.
 					</>
 				}
-				image={<img src="/assets/tagesmutter/01.svg" />}
+				image={
+					<Image
+						width={400}
+						height={400}
+						alt=""
+						src="/assets/tagesmutter/01.svg"
+					/>
+				}
 				title="Das bin ich"
 			/>
 			<Section
@@ -34,24 +42,27 @@ export default function Tagesmutter() {
 						Neben über 11 Jahren Erfahrung im Bereich der
 						Tagespflege kann ich die folgenden Qualifikationen
 						vorweisen:
-						<ul>
-							<li>Erste-Hilfe-Schulung</li>
-							<li>
-								Kolloquium zur QHB qualifizierten
-								Kindertagespflegeperson
-							</li>
-							<li>
-								Abschluss des staatlich anerkannten
-								Fernlehrgangs “Erziehungsberatung”
-							</li>
-							<li>
-								Zertifikat zur “Qualifizierten
-								Tagespflegeperson”
-							</li>
-						</ul>
+						<br />
+						<br />
+						- Erste-Hilfe-Schulung
+						<br />
+						- Kolloquium zur QHB qualifizierten
+						Kindertagespflegeperson
+						<br />
+						- Abschluss des staatlich anerkannten Fernlehrgangs
+						“Erziehungsberatung”
+						<br />- Zertifikat zur “Qualifizierten
+						Tagespflegeperson”
 					</>
 				}
-				image={<img src="/assets/tagesmutter/02.svg" />}
+				image={
+					<Image
+						width={400}
+						height={400}
+						alt=""
+						src="/assets/tagesmutter/02.svg"
+					/>
+				}
 				title="Meine Qualifikationen"
 				isReverse={true}
 			/>
@@ -66,14 +77,21 @@ export default function Tagesmutter() {
 						Tageskindern gut vertraut.
 					</>
 				}
-				image={<img src="/assets/tagesmutter/03.svg" />}
+				image={
+					<Image
+						width={400}
+						height={400}
+						alt=""
+						src="/assets/tagesmutter/03.svg"
+					/>
+				}
 				title="Meine Familie"
 			/>
 			<Section
 				backgroundColor="white"
 				text={
 					<>
-						Ein weiteres Mitglied der Familie ist unser 7 Jahre
+						Ein weiteres Mitglied der Familie ist unser 8 Jahre
 						alter Familienhund Dean oder auch Deany genannt.
 						<br></br>
 						<br></br>
@@ -88,7 +106,14 @@ export default function Tagesmutter() {
 						gewöhnen und den Umgang mit diesem erlernen.
 					</>
 				}
-				image={<img src="/assets/tagesmutter/04.svg" />}
+				image={
+					<Image
+						width={400}
+						height={400}
+						alt=""
+						src="/assets/tagesmutter/04.svg"
+					/>
+				}
 				title="Familienhund"
 				isReverse={true}
 			/>

@@ -7,5 +7,7 @@ import Headline from "./Headline/Headline";
 import Gallery from './Gallery/Gallery';
 import Hero from './Hero/Hero';
 import Typography from "./Typography/Typography";
+import InputField from "./InputField/InputField";
+import Form from "./Form/Form";
 
-export { Gallery, ButtonPrimary, Section, Icon, Footer, Navbar, Headline, Hero, Typography };
+export { Gallery, ButtonPrimary, Section, Icon, Footer, Navbar, Headline, Hero, Typography, InputField, Form };

@@ -1,143 +1,105 @@
+.clouds{
+    position:absolute;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    *{
+        background-color: white;
+        border-radius: 100%;
+        z-index: -5;
+        display: block;
+        margin: 0px -5px;
+    }
+}
+
 .bubble_1 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -15px;
-    left: 50px;
 }
 
 .bubble_2 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 90px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 100px;
 }
 
 .bubble_3 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 180px;
 }
 
 .bubble_4 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 90px;
     height: 74px;
-    background-color: white;
-    border-radius: 100%;
     top: -15px;
-    left: 220px;
 }
 
 .bubble_5 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 280px;
 }
 
 .bubble_6 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 50px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -10px;
-    left: 330px;
 }
 
 .bubble_7 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 360px;
 }
 
 .bubble_8 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 90px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 410px;
 }
 
 .bubble_9 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 90px;
     height: 74px;
-    background-color: white;
-    border-radius: 100%;
     top: -14px;
-    left: 480px;
 }
 
 .bubble_10 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 520px;
 }
 
 .bubble_11 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 71px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -20px;
-    left: 580px;
 }
 
 .bubble_12 {
-    z-index: -5;
-    display: block;
-    position: absolute;
     width: 90px;
     height: 54px;
-    background-color: white;
-    border-radius: 100%;
     top: -15px;
-    left: 620px;
+    display: none;
+}
+
+@media (max-width: 820px) {
+    .clouds{
+        position: absolute;
+        top: -20px;
+        *{
+            position: relative;
+            flex-shrink: 0;
+            left: -10px;
+            margin: 0px -5px;
+        }
+    }
+
+    .bubble_12 {
+        display: block;
+    }
 }

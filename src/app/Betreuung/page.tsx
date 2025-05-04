@@ -1,4 +1,4 @@
-import Title from "@/Title";
+import Image from "next/image";
 import { Headline, Typography } from "@/components";
 import styles from "./page.module.scss";
 
@@ -144,7 +144,20 @@ export default function Betreuung() {
 						meinen Tagesablauf, sodass es für die Kinder möglichst
 						routiniert abläuft.
 					</Typography>
-					<img src="" alt="" />
+					<div>
+						<Image
+							src="assets/betreuung/02.svg"
+							alt=""
+							width={360}
+							height={300}
+						/>
+						<Image
+							src="assets/betreuung/03.svg"
+							alt=""
+							width={360}
+							height={300}
+						/>
+					</div>
 					<img src="" alt="" />
 				</div>
 			</div>
@@ -209,8 +222,12 @@ export default function Betreuung() {
 						Der wöchentliche Essensplan hängt am Infoboard am
 						Eingangsbereich.
 					</Typography>
-					<img src="" alt="" />
-					<img src="" alt="" />
+					<Image
+						src="assets/betreuung/01.svg"
+						alt=""
+						width={350}
+						height={300}
+					/>
 				</div>
 			</div>
 			<div className={styles.sectionWrapper}>
@@ -298,8 +315,20 @@ export default function Betreuung() {
 						zum Jahresende ist auch bereits fester Bestandteil der
 						Kindertagespflege.
 					</Typography>
-					<img src="" alt="" />
-					<img src="" alt="" />
+					<div>
+						<Image
+							src="assets/betreuung/04.svg"
+							alt=""
+							width={415}
+							height={300}
+						/>
+						<Image
+							src="assets/betreuung/05.svg"
+							alt=""
+							width={300}
+							height={300}
+						/>
+					</div>
 				</div>
 			</div>
 		</>

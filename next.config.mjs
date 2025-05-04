@@ -4,6 +4,12 @@ const nextConfig = {
   images: { unoptimized: true },
 
   webpack(config) {
+    headers: [
+      {
+        key: 'Cache-Control',
+        value: 'public, max-age=31536000, immutable', // cache for 1 year
+      },
+    ],
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/, // Apply only for JavaScript/TypeScript

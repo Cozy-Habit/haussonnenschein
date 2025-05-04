@@ -1,4 +1,4 @@
-import IconMap32 from "./32x32/index";
+import IconMap32 from "./icons/index";
 
 type Icon32 = keyof typeof IconMap32;
 

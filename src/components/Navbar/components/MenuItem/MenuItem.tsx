@@ -6,10 +6,13 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import styles from "./MenuItem.module.scss";
 import clsx from "clsx";
+import MenuItemProps from "./MenuItem.types";
+import { useIsMobile } from "../../../../hooks";
 
-function MenuItem({ href, label }: { href: string; label: string }) {
+function MenuItem({ href, label, onClick }: MenuItemProps) {
 	const pathname = usePathname();
 	const [activeClassName, setActiveClassName] = useState(false);
+	const isMobile = useIsMobile();
 
 	useEffect(() => {
 		// remove trailing slash
@@ -25,14 +28,14 @@ function MenuItem({ href, label }: { href: string; label: string }) {
 	console.log(activeClassName);
 	return (
 		<li>
-			<Link href={href}>
+			<Link href={href} className={styles.menuItem} onClick={onClick}>
 				<Typography
-					className={clsx(styles.menuItem, {
-						[styles["menuItem--active"]]: activeClassName,
-					})}
-					type="h2"
+					type={isMobile ? "h1" : "h2"}
 					fontFamily="lilita"
 					as="span"
+					className={clsx({
+						[styles["menuItem--active"]]: activeClassName,
+					})}
 				>
 					{activeClassName ? label.toUpperCase() : label}
 				</Typography>

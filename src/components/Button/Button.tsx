@@ -10,41 +10,36 @@ const Button = ({
 	ariaLabelledBy,
 	children,
 	className,
-	href,
-	onClick,
 	role,
-	type = "button",
+	variant = "button",
+	...props
 }: ButtonProps) => {
-	const isLink = href;
-
-	if (isLink)
+	if (variant === "link")
 		return (
 			<a
+				{...props}
 				role={role}
 				aria-label={ariaLabel}
 				aria-labelledby={ariaLabelledBy}
 				aria-describedby={ariaDescribedBy}
-				onClick={onClick}
-				href={href}
 				className={clsx(styles.button, className)}
 			>
 				{children}
 			</a>
 		);
-	else
-		return (
-			<button
-				type={type}
-				role={role}
-				aria-label={ariaLabel}
-				aria-labelledby={ariaLabelledBy}
-				aria-describedby={ariaDescribedBy}
-				onClick={onClick}
-				className={clsx(styles.button, className)}
-			>
-				{children}
-			</button>
-		);
+
+	return (
+		<button
+			{...props}
+			role={role}
+			aria-label={ariaLabel}
+			aria-labelledby={ariaLabelledBy}
+			aria-describedby={ariaDescribedBy}
+			className={clsx(styles.button, className)}
+		>
+			{children}
+		</button>
+	);
 };
 
 export default Button;

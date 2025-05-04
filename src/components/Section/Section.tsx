@@ -43,9 +43,10 @@ const Section = ({
 						{buttonText && (
 							<ButtonPrimary
 								href={buttonHref}
-								text={buttonText}
 								iconLeft={<Icon icon="arrow_right" />}
-							/>
+							>
+								{buttonText}
+							</ButtonPrimary>
 						)}
 					</div>
 					<div className={styles["section__img"]}>{image}</div>
