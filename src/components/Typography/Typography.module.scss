@@ -1,29 +1,30 @@
 .typography {
-    color: var(--accent_1);
+	color: var(--accent_1);
+	overflow-wrap: break-word;
 }
 
-.typography--inter{
-    font-family: "Inter", sans-serif;
+.typography--inter {
+	font-family: "Inter", sans-serif;
 }
-.typography--lilita{
-    font-family: "Lilita One", cursive;
+.typography--lilita {
+	font-family: "Lilita One", cursive;
 }
-.typography--h1{
-    font-size: 40px;
+.typography--h1 {
+	font-size: 40px;
 }
-.typography--h2{
-    font-size: 24px;
+.typography--h2 {
+	font-size: 24px;
 }
-.typography--h3{
-    font-size: 16px;
+.typography--h3 {
+	font-size: 16px;
 }
-.typography--body-regular{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+.typography--body-regular {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 }
-.typography--body-semibold{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
+.typography--body-semibold {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
 }

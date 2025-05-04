@@ -144,7 +144,7 @@ export default function Betreuung() {
 						meinen Tagesablauf, sodass es für die Kinder möglichst
 						routiniert abläuft.
 					</Typography>
-					<div>
+					<div className={styles.section__images}>
 						<Image
 							src="assets/betreuung/02.svg"
 							alt=""
@@ -158,7 +158,6 @@ export default function Betreuung() {
 							height={300}
 						/>
 					</div>
-					<img src="" alt="" />
 				</div>
 			</div>
 			<div className={styles.sectionWrapper}>
@@ -315,7 +314,7 @@ export default function Betreuung() {
 						zum Jahresende ist auch bereits fester Bestandteil der
 						Kindertagespflege.
 					</Typography>
-					<div>
+					<div className={styles.section__images}>
 						<Image
 							src="assets/betreuung/04.svg"
 							alt=""
