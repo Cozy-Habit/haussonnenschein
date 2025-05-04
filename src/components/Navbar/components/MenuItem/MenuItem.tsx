@@ -8,11 +8,19 @@ import styles from "./MenuItem.module.scss";
 import clsx from "clsx";
 import MenuItemProps from "./MenuItem.types";
 import { useIsMobile } from "../../../../hooks";
+import { useRouter } from "next/navigation";
+import Button from "@/components/Button/Button";
 
 function MenuItem({ href, label, onClick }: MenuItemProps) {
 	const pathname = usePathname();
 	const [activeClassName, setActiveClassName] = useState(false);
 	const isMobile = useIsMobile();
+	const router = useRouter();
+
+	const handleClick = () => {
+		router.push(href);
+		onClick && onClick();
+	};
 
 	useEffect(() => {
 		// remove trailing slash
@@ -28,7 +36,7 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 	console.log(activeClassName);
 	return (
 		<li>
-			<Link href={href} className={styles.menuItem} onClick={onClick}>
+			<Button className={styles.menuItem} onClick={handleClick}>
 				<Typography
 					type={isMobile ? "h1" : "h2"}
 					fontFamily="lilita"
@@ -39,7 +47,7 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 				>
 					{activeClassName ? label.toUpperCase() : label}
 				</Typography>
-			</Link>
+			</Button>
 		</li>
 	);
 }

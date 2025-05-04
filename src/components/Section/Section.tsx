@@ -42,6 +42,7 @@ const Section = ({
 						<Typography type="body-semibold">{text}</Typography>
 						{buttonText && (
 							<ButtonPrimary
+								variant="link"
 								href={buttonHref}
 								iconLeft={<Icon icon="arrow_right" />}
 							>
