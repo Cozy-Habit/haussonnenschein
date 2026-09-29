@@ -1,0 +1,173 @@
+{
+	"nav": {
+		"home": "Home",
+		"childminder": "Childminder",
+		"premises": "Premises",
+		"care": "Child Care",
+		"contact": "Contact"
+	},
+	"home": {
+		"hero": {
+			"title": "Haus Sonnenschein",
+			"subtitle": "Child Daycare in Sankt Augustin (Under 3)"
+		},
+		"childminder": {
+			"title": "Childminder",
+			"content": "My name is Sandra Diner and I am 49 years old. Originally trained as a self-employed master interior decorator, having my own children led me to discover and fall in love with my true calling:",
+			"highlight": "Child Daycare",
+			"cta": "More About Sandra"
+		},
+		"premises": {
+			"title": "Premises",
+			"content": "Childcare takes place in my single-family home. The children have plenty of room to play freely in the living and dining rooms.\n\n Snacks as well as lunch are enjoyed together in the living area.\n\n In the bedrooms, children can take their midday nap in comfortable beds.\n\n In addition, the children can play under my supervision in the spacious backyard and garden.",
+			"cta": "More Photos"
+		},
+		"care": {
+			"title": "Child Care",
+			"content": "My childcare program is diverse and multifaceted. There is a reliable daily routine from morning drop-off to afternoon pickup.\n\n Featuring balanced snacks and lunch, alongside daily activities adapted to the weather.\n\n Every child is cared for with their individual strengths and needs in mind, receiving tailored support through a variety of games and activities.",
+			"cta": "More About Our Care"
+		},
+		"contact": {
+			"title": "Contact",
+			"content": "Does my childcare approach resonate with you?\n\n Feel free to get in touch using the contact form to schedule an initial meet-and-greet.\n\n I will get back to you as soon as possible via email or phone.",
+			"cta": "Go to Contact Form"
+		}
+	},
+	"childminder": {
+		"title": "Childminder",
+		"aboutMe": {
+			"title": "About Me",
+			"content": "I am a very empathetic, sociable person who truly loves working with children. I am also an absolute family person and spend a lot of time with my loved ones—going on outings, celebrating together, and more.\n\n Outside of work, household, and family life, I enjoy gardening, reading a good book, going to the sauna, eating good food, and spending quality time with friends."
+		},
+		"qualifications": {
+			"title": "My Qualifications",
+			"content": "Along with over 14 years of experience in child daycare, I hold the following qualifications:",
+			"items": "First Aid Training; Colloquium for QHB-Certified Child Daycare Providers; Graduate of the State-Recognized Distance Learning Course in Educational Counseling; Certificate as a Qualified Child Daycare Provider"
+		},
+		"family": {
+			"title": "My Family",
+			"content": "I am the mother of four wonderful children and already the proud grandma of two grandchildren.\n\n My children still visit the family home regularly, so they are very familiar with my daily daycare routine and the daycare children."
+		},
+		"familyDog": {
+			"title": "Family Dog",
+			"content": "Another member of our family is our 10-year-old family dog Dean, also known as Deany.\n\n He is a total magnet for kids and my trusty assistant in our daily routine.\n\n He is a gentle, calm soul and has been used to being around children since he was a puppy.\n\n The children quickly get used to him and learn how to interact with a dog safely and respectfully."
+		}
+	},
+	"premises": {
+		"title": "Premises"
+	},
+	"care": {
+		"title": "Child Care",
+		"acclimatization": {
+			"title": "Acclimatization",
+			"intro": "The transition period begins about 1 month before regular childcare starts, but it can also take place earlier on an individual basis or be shortened in exceptional cases. I prefer using the Berlin Model for this process.",
+			"basicPhaseTitle": "The Three-Day Base Phase",
+			"basicPhaseText": "The mother or father should spend one to two hours with the child at my home. During this time, the mother or father remains passive yet attentive to the child's cues. They serve as a “safe haven” for the child—meaning the parent does not follow the child around, but stays easily accessible and attentive (reading the newspaper or playing with other children is counterproductive here). Meanwhile, I gently attempt to establish contact with the child through play invitations. No separations take place during this stage. The parent handles all care routines. An object that smells like mom or dad (such as a comfort blanket or a worn t-shirt) can make the adjustment easier for the child. It is usually especially helpful for the child to cuddle with it during the first nap attempts.",
+			"firstSeparationTitle": "The First Separation Attempt",
+			"firstSeparationText": "On the fourth day, mom or dad steps out of the apartment after a short while, following a proper goodbye to the child. If the child is easily soothed by me or remains indifferent, the first separation period should last about 30 minutes. If the child appears distressed or begins crying without calming down quickly, the separation should not last longer than two to three minutes.",
+			"stabilizationTitle": "The Stabilization Phase",
+			"stabilizationText": "The stabilization phase begins on the fifth day (or the sixth day if the fifth day falls on a Monday). I gradually take over caring for the child—initially with mom or dad present (feeding, diaper changes, etc.). I intentionally offer myself as a play partner and respond to the child's signals. Taking the child's needs into account, the separation periods are extended daily. If the child does not accept the separation yet, we wait until the second week before trying another separation. However, a new step is never introduced on a Monday due to the preceding weekend.",
+			"conclusionTitle": "Conclusion of Acclimatization",
+			"conclusionText": "The acclimatization period is considered complete once the child accepts comfort from me and comes willingly and happily to daycare. This is evident when they enjoy their daily routine, actively participate in group activities, and understand the household rules and daily structure—while still testing boundaries from time to time.\n\nThis is, of course, just an example of a general adjustment framework. In practice, I tailor each step of the acclimatization process individually to the needs of the parents and child. For some children and parents, the process goes faster; others require more time and an individualized pace. Age-specific developmental milestones or illness during the transition can also result in a longer adjustment period.\n\nI always consult closely with parents, discuss their needs and impressions, and align the pace of the adjustment process with them."
+		},
+		"dailyRoutine": {
+			"title": "Daily Routine",
+			"content": "Drop-off is between 8:00 AM and 9:00 AM, and children should be brought by a family member. During this time, the children can already begin playing with a variety of toys.\n\nWe have breakfast together at 9:00 AM, so all children should arrive by then. Afterwards, we hold our morning circle featuring favorite songs along with seasonally changing tunes.\n\nNext, I see what the children feel like doing: if the weather is nice, we head out to the garden, visit the playground, or take a walk. In bad weather, I offer different activities such as coloring, crafting together, building with the Duplo bin, playing with the car track, and more.\nFree play is always an option, as I adapt flexibly to the children's needs.\n\nAround 11:30 AM, we sit down for lunch together, followed by naptime or quiet rest. After naptime, we enjoy an afternoon snack together.\n\nDuring pickup time, the children are free to choose what they want to do. I suggest various activities based on what they feel like doing. Pickup times are coordinated with parents, and I structure the day around them to maintain a consistent routine for the children."
+		},
+		"carePeriod": {
+			"title": "Operating Hours",
+			"content": "Monday – Friday (closings occur primarily during school holidays)\n\nFlexible drop-off window: 8:00 AM – 9:00 AM\nQuiet/nap time: 12:00 PM – 2:00 PM\nPickup window: 2:00 PM – 3:00 PM"
+		},
+		"illness": {
+			"title": "Sickness Policy",
+			"content": "Regarding illnesses, I adhere to the general readmission guidelines of the Robert Koch Institute and only readmit children once they have been fever-free without medication for 24 hours and symptom-free from diarrhea and vomiting for 48 hours."
+		},
+		"mealPlan": {
+			"title": "Meal Plan",
+			"content": "Just as with my own children, I place great emphasis on healthy, balanced nutrition. For me, that naturally includes fresh fruits and vegetables.\n\nDuring daycare hours from 8:00 AM to 3:00 PM, I provide the following meals:\n\n- 9:00 AM – Shared breakfast (bread, fruit, raw vegetables, etc.)\n- 11:30 AM – Lunch (freshly prepared and varied daily meals)\n- 2:30 PM – Snack (fruit, cookies... and an ice cream treat in the summer)\n\nI always make sure the menu is balanced and varied, incorporating a wide range of ingredients such as pasta, potatoes, rice, fruit, meat, fish, vegetables, and more. Still water and unsweetened herbal teas are available throughout the day. Importantly, no child is forced to eat or try anything—each child decides for themselves what and how much they would like to eat.\n\nThe weekly menu is posted on the info board in the entryway."
+		},
+		"educationalDocumentation": {
+			"title": "Developmental Documentation",
+			"content": "I regularly offer parents two parent-teacher conferences per year, one per half-year. Using the developmental documentation I keep, I outline your child's progress over recent months and address any questions parents may have.\n\nI prepare the semi-annual development reports using the 'Bildungsschnecke' framework alongside software that is also utilized in daycare centers.\n\nAt the end of the daycare placement, the collected reports and documentation are handed over to the parents. Preschools occasionally request these records as well."
+		},
+		"parentCooperation": {
+			"title": "Working with Parents",
+			"content": "Family and childminder share mutual responsibility for the child's well-being; an open and close partnership with parents is the foundation for this. For that reason, I provide parents with comprehensive information regarding our daily routine and their child's current stage of development.\n\nDaily quick doorstep check-ins allow both parents and me to exchange timely, individualized, and situational updates. Over time, this builds mutual confidence and trust.\n\nTo ensure optimal care for the child, it is essential that I am kept informed about any family changes so I can respond appropriately to the child's needs. This also requires that emergency contacts remain reachable at all times. Any updates to phone numbers or authorized pickup persons must be communicated to me immediately.\n\nShould any concerns, questions, anxieties, or issues arise, I am always available for a private conversation. Together, we will find solutions and resolve any pent-up worries or anxieties.\n\nI am also always available for a personal chat at any time—just let me know and we will set up an appointment."
+		},
+		"events": {
+			"title": "Events",
+			"content": "Throughout the year, I host several celebrations with parents and children.\n\nThese include our traditional Carnival party, where we watch the parade together and celebrate with food and drinks brought by the families.\n\nAnother highlight is our summer festival, where we bid farewell to the older children moving on to preschool and welcome new families.\n\nA cozy Christmas gathering with coffee and cake at year-end is also an established tradition in our daycare."
+		}
+	},
+	"contact": {
+		"title": "CONTACT",
+		"parentData": {
+			"title": "Parent Details",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"email": "Email Address",
+			"phone": "Mobile Number",
+			"placeholders": {
+				"firstName": "Jonas",
+				"lastName": "Mustermann",
+				"email": "jonas.mustermann@mail.com",
+				"phone": "0176 123456"
+			}
+		},
+		"childData": {
+			"title": "Child Details",
+			"firstName": "First Name",
+			"lastName": "Last Name",
+			"birthday": "Date of Birth",
+			"placeholders": {
+				"firstName": "Lena",
+				"lastName": "Mustermann"
+			}
+		},
+		"careData": {
+			"title": "Care Details",
+			"startDate": "Care Start Date",
+			"endDate": "Care End Date"
+		},
+		"address": {
+			"title": "Address",
+			"street": "Street",
+			"houseNumber": "House Number",
+			"city": "City",
+			"postalCode": "ZIP Code",
+			"placeholders": {
+				"street": "Musterstraße",
+				"houseNumber": "123",
+				"city": "Musterstadt",
+				"postalCode": "51234"
+			}
+		},
+		"misc": {
+			"title": "Additional Information",
+			"message": "Personal Message / Notes / Remarks",
+			"placeholder": "Your message here..."
+		},
+		"submit": "Submit Request",
+		"success": "Submission successful"
+	},
+	"legalNotice": {
+		"title": "LEGAL NOTICE",
+		"addressHeading": "Daycare Address",
+		"name": "Sandra Diner",
+		"address": "Niederpleiserstr. 97, 53757 Sankt Augustin",
+		"phoneNumber": "0163 6912191",
+		"email": "kindertagespflege-haus-sonnenschein@web.de",
+		"jobTitle": "Freelancer"
+	},
+	"footer": {
+		"nav": {
+			"home": "Home",
+			"childminder": "Childminder",
+			"premises": "Premises",
+			"care": "Child Care",
+			"contact": "Contact",
+			"legalNotice": "Legal Notice"
+		},
+		"credits": "Design by Sophia Precker"
+	}
+}

@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Sonne from "@/svg/Sonne";
 import styles from "./Footer.module.scss";
 import Typography from "../Typography/Typography";
+import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Footer = () => {
+	const { t } = useTranslation();
+
 	return (
 		<footer className={styles.footer}>
 			<Sonne />
@@ -12,50 +17,50 @@ const Footer = () => {
 				<ul className={styles["footer__list"]}>
 					<li>
 						<Link href="/">
-							<Typography type="body-semibold">Home</Typography>
+							<Typography type="body-semibold">
+								{t("footer.nav.home")}
+							</Typography>
 						</Link>
 					</li>
 					<li>
 						<Link href="/Tagesmutter">
 							<Typography type="body-semibold">
-								Tagesmutter
+								{t("footer.nav.childminder")}
 							</Typography>
 						</Link>
 					</li>
 					<li>
 						<Link href="/Raeumlichkeiten">
 							<Typography type="body-semibold">
-								Räumlichkeiten
+								{t("footer.nav.premises")}
 							</Typography>
 						</Link>
 					</li>
 					<li>
 						<Link href="/Betreuung">
 							<Typography type="body-semibold">
-								Betreuung
+								{t("footer.nav.care")}
 							</Typography>
 						</Link>
 					</li>
 					<li>
 						<Link href="/Kontakt">
 							<Typography type="body-semibold">
-								Kontakt
+								{t("footer.nav.contact")}
 							</Typography>
 						</Link>
 					</li>
 					<li>
 						<Link href="/Impressum">
 							<Typography type="body-semibold">
-								Impressum
+								{t("footer.nav.legalNotice")}
 							</Typography>
 						</Link>
 					</li>
 				</ul>
 			</nav>
 			<div className={styles["footer__divider"]}></div>
-			<Typography type="body-regular">
-				Design by Sophia Precker
-			</Typography>
+			<Typography type="body-regular">{t("footer.credits")}</Typography>
 		</footer>
 	);
 };

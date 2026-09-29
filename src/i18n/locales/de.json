@@ -1,0 +1,172 @@
+{
+	"nav": {
+		"home": "Home",
+		"childminder": "Tagesmutter",
+		"premises": "Räumlichkeiten",
+		"care": "Betreuung",
+		"contact": "Kontakt"
+	},
+	"home": {
+		"hero": {
+			"title": "Haus Sonnenschein",
+			"subtitle": "Kindertagespflege in Sankt Augustin U3"
+		},
+		"childminder": {
+			"title": "Tagesmutter",
+			"content": "Mein Name ist Sandra Diner und ich bin 49 Jahre alt. Als ursprünglich gelernte und selbständige Raumausstatter-Meisterin habe ich durch meine Kinder meine eigentliche Berufung entdeckt und lieben gelernt: \n\n Die Kindertagespflege",
+			"cta": "Mehr über Sandra"
+		},
+		"premises": {
+			"title": "Räumlichkeiten",
+			"content": "Die Betreuung findet in meinem Einfamilienhaus statt. Die Kinder können sich im Wohnzimmer und Esszimmer spielerisch austoben.\n\n Im Wohnzimmer werden Snacks als auch das Mittagessen gemeinsam eingenommen.\n\n In den Schlafräumen können die Kinder in den Betten ihren Mittagsschlaf machen.\n\n Dazu können die Kinder unter meiner Aufsicht in den großzügigen Hinterhof und Garten.",
+			"cta": "Mehr Bilder"
+		},
+		"care": {
+			"title": "Betreuung",
+			"content": "Meine Betreuung ist sehr vielseitig und fassettenreich. Es gibt einen gewohnten Tagesablauf von der Morgenbegrüßung bis zur Abholung am Nachmittag.\n\n Mit abwechslungsreichen Snacks und Mittagessen, als auch vom Wetter abhängenden Tagesprogramm.\n\n Hierbei wird jedes Kind mitsamt seiner Stärken und Schwächen betreut und durch diverse Spiele und Aktivitäten individuell gefördert.",
+			"cta": "Mehr zur Betreuung"
+		},
+		"contact": {
+			"title": "Kontakt",
+			"content": "Spricht dich mein Konzept der Kindertagespflege an?\n\n Dann nimm gerne mit mir Kontakt über das Kontaktformular auf und vereinbare ein erstes Kennenlerngespräch.\n\n Ich melde mich so schnell wie möglich per Email oder telefonisch.",
+			"cta": "Zum Kontaktformular"
+		}
+	},
+	"childminder": {
+		"title": "Tagesmutter",
+		"aboutMe": {
+			"title": "Das bin ich",
+			"content": "Ich bin eine sehr emphatische, soziale und kinderliebe Person. Zudem bin ich ein absoluter Familienmensch und verbringe daher auch viel Zeit mit meinen Lieben, Ausflüge, Feiern ect.\n\n Neben Arbeit, Haushalt und Familie arbeite ich auch gerne im Garten, lese ein gutes Buch, gehe gerne in die Sauna, lecker essen und liebe es Zeit mit Freunden zu verbringen."
+		},
+		"qualifications": {
+			"title": "Meine Qualifikationen",
+			"content": "Neben über 14 Jahren Erfahrung im Bereich der Tagespflege kann ich die folgenden Qualifikationen vorweisen:",
+			"items": "Erste-Hilfe-Schulung; Kolloquium zur QHB qualifizierten Kindertagespflegeperson; Abschluss des staatlich anerkannten Fernlehrgangs „Erziehungsberatung“;Zertifikat zur „Qualifizierten Tagespflegeperson“"
+		},
+		"family": {
+			"title": "Meine Familie",
+			"content": "Ich bin Mutter von vier tollen Kindern und sogar bereits stolze Oma zweier Enkelkinder.\n\n Meine Kinder gehen im Familienhaus noch regelmäßig ein und aus. Sie sind daher mit meinem Arbeitsalltag und den Tageskindern gut vertraut."
+		},
+		"familyDog": {
+			"title": "Familienhund",
+			"content": "Ein weiteres Mitglied der Familie ist unser 10 Jahre alter Familienhund Dean oder auch Deany genannt. \n\n Er ist ein absoluter Kindermagnet und mein Assistent in der täglichen Betreuung. \n\n Zudem ist er eine sehr liebevolle und ruhige Seele und ist den Umgang mit Kindern seit er klein ist gewohnt. \n\n Die Kinder werden sich also rasch an ihn gewöhnen und den Umgang mit diesem erlernen."
+		}
+	},
+	"premises": {
+		"title": "Räumlichkeiten"
+	},
+	"care": {
+		"title": "Betreuung",
+		"acclimatization": {
+			"title": "Eingewöhnung",
+			"intro": "Die Eingewöhnung beginnt ca. 1 Monat vor der regulären Betreuung, kann aber auch individuell früher erfolgen oder in Ausnahmefällen verkürzt werden. Ich bevorzuge dabei das sogenannte Berliner Modell.",
+			"basicPhaseTitle": "Die dreitätige Grundphase",
+			"basicPhaseText": "Die Mutter oder der Vater sollten sich mit dem Kind für ein bis zwei Stunden bei mir in den Räumlichkeiten aufhalten. Dabei verhalten sich Mutter oder Vater passiv, aber aufmerksam gegenüber den Signalen des Kindes. Sie sind für das Kind der „sichere Hafen“, d. h. Mutter oder Vater folgen dem Kind nicht, sind aber immer gut erreichbar und aufmerksam (Zeitung lesen und das Spielen mit anderen Kindern ist hier sehr kontraproduktiv). In dieser Zeit versuche ich vorsichtig, über Spielangebote Kontakt zum Kind aufzubauen. Es finden keine Trennungsversuche statt. Die Pflegeroutinen vollzieht die Mutter/der Vater. Ein Gegenstand, der nach Mutter oder Vater riecht (Schnuffeltuch, getragenes T-Shirt) kann die Eingewöhnung für das Kind erleichtern. Insbesondere bei den ersten Schlafversuchen ist es für das Kind meist sehr hilfreich, sich darin einzukuscheln.",
+			"firstSeparationTitle": "Der erste Trennungsversuch",
+			"firstSeparationText": "Am vierten Tag entfernt sich die Mama oder Papa nach einiger Zeit aus meiner Wohnung, nachdem sie sich vom Kind verabschiedet haben. Lässt sich das Kind schnell von mir beruhigen oder ist es eher gleichmütig, sollte die erste Trennungsperiode 30 Minuten betragen. Wirkt das Kind hingegen verstört oder beginnt zu weinen, ohne sich schnell trösten zu lassen, so sollte die Trennung nicht länger als zwei bis drei Minuten betragen.",
+			"stabilizationTitle": "Die Stabilisierungsphase",
+			"stabilizationText": "Die Stabilisierungsphase beginnt mit dem fünften Tag (mit dem sechsten, wenn der fünfte Tag ein Montag ist). Ich übernehme zunehmend – erst im Beisein von Mama oder Papa – die Versorgung des Kindes (Füttern, Wickeln etc.). Ich biete mich gezielt als Spielpartner an und reagiere auf die Signale des Kindes. Die Trennungszeiten werden, unter Beachtung der Bedürfnisse des Kindes, täglich verlängert. Akzeptiert das Kind die Trennung noch nicht, sollte bis zur zweiten Woche mit einer neuen Trennung gewartet werden. Es wird jedoch nie an einem Montag mit einem neuen Schritt begonnen aufgrund des davor liegenden Wochenendes.",
+			"conclusionTitle": "Abschluss der Eingewöhnung",
+			"conclusionText": "Die Eingewöhnung gilt als abgeschlossen, wenn sich das Kind zum einen von mir trösten lässt, aber auch grundsätzlich bereitwillig und gern zu mir in die Betreuung kommt. Dies lässt sich gut daran erkennen, dass es Spaß und Freude im Alltag hat, sich aktiv an Gruppenprozessen beteiligt, die typischen Regeln im Haus und Ablauf bei uns kennt, aber diese auch immer wieder mal in Frage stellt.\n\nDies stellt natürlich nur ein Beispiel für eine grundsätzlichen Ablauf der Eingewöhnung dar. Tatsächlich passe ich die einzelnen Schritte der Eingewöhnung individuell auf die Bedürfnisse von Eltern und Kind an. Bei manchen Kindern und auch Eltern geht die Eingewöhnung schneller von statten. Andere wiederum benötigen mehr Zeit, sprich ein individuelleres Tempo. Auch die jeweiligen altersbedingten Entwicklungsphasen oder Krankheit während der Eingewöhnung können eine längere Phase des Ankommens mit sich bringen.\n\nIch spreche mich dabei grundsätzlich mit den Eltern ab, tausche mich mit Ihnen über Ihre Bedürfnisse und Eindrücke aus und stimme das Tempo der Eingewöhnung mit Ihnen ab."
+		},
+		"dailyRoutine": {
+			"title": "Tagesablauf",
+			"content": "Von 8 - 9 Uhr ist Ankunftszeit, wobei die Kinder von einem Familienangehörigen gebracht werden sollten. Die Kinder können dann bereits mit allerlei Spielsachen spielen.\n\nDas gemeinsame Frühstück gibt es dann um 9 Uhr, daher sollten bis dahin alle Kinder da sein. Im Anschluss findet unseren Morgenkreis mit festen Liedern, aber auch saisonal wechselnden Stücken statt.\n\nDanach schaue ich mit den Kindern gemeinsam, ob wir bei gutem Wetter raus in den Garten gehen, auf den Spielplatz oder einfach einen Spaziergang machen. Bei schlechtem Wetter biete ich den Kindern verschiedene Optionen an wie z. B. , malen oder auch gemeinsames basteln, die Duplo Kiste zum bauen oder die Autobahn ect..\nNatürlich besteht auch die Möglichkeit des freien Spiels, passe ich mich immer ganz individuell an den Bedürfnissen der Kinder an.\n\nDann gibt es gegen 11:30 Uhr das gemeinsame Mittagessen, mit anschließendem Mittagsschlaf bzw. Mittagsruhe. Nach dem Mittagsschlaf gibt es den gemeinsamen Nachmittags-Snack.\n\nIn der Abholzeit steht es den Kindern frei, mit was sie sich beschäftigen wollen. Ich biete die ein oder andere Option, so wie es die Kinder zulassen. Die Abholzeit ist mit den Eltern festgelegt und danach richte ich auch meinen Tagesablauf, sodass es für die Kinder möglichst routiniert abläuft."
+		},
+		"carePeriod": {
+			"title": "Betreuungszeitraum",
+			"content": "Montag - Freitag (Schließungszeiten vorwiegend während der Ferien)\n\nGleitende Ankunftszeit 8.00 Uhr - 9.00 Uhr\nMittagsruhe 12.00 Uhr - 14.00 Uhr\nAbholung zwischen 14.00 - 15.00 Uhr"
+		},
+		"illness": {
+			"title": "Krankheitsfall",
+			"content": "Ich richte mich bei Krankheiten nach den allgemeinen Wiederzulassungsrichtlinien des Robert Koch- Instituts und betreue Kinder erst wieder, wenn sie ohne Medikamente 24 Stunden fieberfrei und 48 Stunden ohne Durchfall und Erbrechen sind."
+		},
+		"mealPlan": {
+			"title": "Essensplan",
+			"content": "Wie auch bei meinen eigenen Kindern, lege ich viel Wert auf eine gesunde und ausgewogene Ernährung. Dazu gehören für mich unter anderem frisches Obst und Gemüse.\n\nWährend der Betreuungszeit von 8 – 15 Uhr biete ich folgende Mahlzeiten an:\n\n- 9:00 Uhr gemeinsames Frühstück (Brot, Obst, Rohkost ect.)\n- 11:30 Uhr Mittag (täglich frisch und abwechslungsreiche Mahlzeiten)\n- 14.30 Uhr Snack ( Obst, Kekse...im Sommer auch mal ein Eis…)\n\nIch achte stets darauf, dass der Speiseplan ausgewogen und abwechslungsreich gestaltet ist, was verschiedene Nahrungsmittel beinhaltet. Wie z. B. Nudeln, Kartoffeln, Reis, Obst, Fleisch, Fisch, Gemüse usw.. Stilles Wasser oder nicht gezuckerte Tees stehen den ganzen Tag über zu Verfügung. Wichtig ist hierbei auch, hier wird kein Kind gezwungen etwas zu essen oder zu probieren, denn jedes Kind entscheidet selbst was und wieviel es essen mag.\n\nDer wöchentliche Essensplan hängt am Infoboard am Eingangsbereich."
+		},
+		"educationalDocumentation": {
+			"title": "Bildungsdokumentation",
+			"content": "Regulär biete ich den Eltern zwei Entwicklungsgespräche im Jahr an, eins pro Halbjahr. Ich schildere anhand der von mir geführten Bildungsdokumentation die erfolgte Entwicklung in den letzten Monaten und beantworte Fragen seitens der Eltern.\n\nDie halbjährlichen Entwicklungsberichte erstelle ich mit Hilfe der Bildungsschnecke, sowie einem Computerprogramm, welches auch in Kitas verwendet wird.\n\nAm Ende der Betreuungszeit werden die gesammelten Berichte und Dokumentationen den Eltern ausgehändigt. Teilweise haben die Kitas auch daran Interesse."
+		},
+		"parentCooperation": {
+			"title": "Zusammenarbeit mit den Eltern",
+			"content": "Familie und Tagesmutter sind gemeinsam für das Wohl des Kindes verantwortlich, eine offene und intensive Zusammenarbeit mit den Eltern ist grundlegende Voraussetzung dafür. Aus diesem Grund biete ich den Eltern ausführliche Informationen über den Tagesablauf und den aktuellen Entwicklungsstand des Kindes an.\n\nDie täglichen „Tür und Angel“ Gespräche ermöglichen sowohl den Eltern als auch mir, aktuelle, individuelle und situationsbedingte Informationen auszutauschen. Dies schafft auf Dauer Sicherheit und Vertrauen im gegenseitigen Miteinander.\n\nUm eine optimale Betreuung des Kindes zu gewährleisten, ist es erforderlich, dass ich über Veränderungen in der Familie informiert werde, um bedürfnisorientiert handeln zu können. Das beinhaltet auch, dass Kontaktpersonen, die angegeben wurden, jederzeit für mich erreichbar sind. Änderungen der Telefonnummer oder der berechtigten Personen sind mir umgehend mitzuteilen.\n\nSollten irgendwelche Probleme, Fragen, Ängste oder Anliegen im Raum stehen, biete ich Ihnen zu jederzeit ein persönliches Gespräch unter vier Augen an. Gemeinsam werden wir Lösungen finden und aufgestaute Ängste oder Sorgen beseitigen.\n\nNatürlich stehe ich Ihnen auch so jederzeit für ein persönliches Gespräch zur Verfügung, sprechen Sie mich einfach an und wir vereinbaren einen Termin."
+		},
+		"events": {
+			"title": "Veranstaltungen",
+			"content": "Im Laufe des Jahres veranstalte ich mit den Eltern und Kindern auch einige Feste.\n\nDarunter fallen z.B. unsere schon traditionelle Karnevalsfeier, wobei wir den Karnevalszug gemeinsam schauen und anschließend beim mitgebrachten Essen und Trinken zusammen feiern.\n\nAuch sehr schön ist unser Sommerfest, wobei wir die “großen” Kinder in die Kita verabschieden und die “neuen” Kinder Willkommen heißen.\n\nEine gemütliche Weihnachtsfeier mit Kaffee und Kuchen zum Jahresende ist auch bereits fester Bestandteil der Kindertagespflege."
+		}
+	},
+	"contact": {
+		"title": "KONTAKT",
+		"parentData": {
+			"title": "Daten Elternteil",
+			"firstName": "Vorname",
+			"lastName": "Nachname",
+			"email": "E-Mail Adresse",
+			"phone": "Mobilnummer",
+			"placeholders": {
+				"firstName": "Jonas",
+				"lastName": "Mustermann",
+				"email": "jonas.mustermann@mail.com",
+				"phone": "0176 123456"
+			}
+		},
+		"childData": {
+			"title": "Daten Kind",
+			"firstName": "Vorname",
+			"lastName": "Nachname",
+			"birthday": "Geburtstag",
+			"placeholders": {
+				"firstName": "Lena",
+				"lastName": "Mustermann"
+			}
+		},
+		"careData": {
+			"title": "Betreuungsdaten",
+			"startDate": "Betreuungsstart",
+			"endDate": "Betreuungsende"
+		},
+		"address": {
+			"title": "Anschrift",
+			"street": "Straße",
+			"houseNumber": "Hausnummer",
+			"city": "Stadt",
+			"postalCode": "Postleitzahl",
+			"placeholders": {
+				"street": "Musterstraße",
+				"houseNumber": "123",
+				"city": "Musterstadt",
+				"postalCode": "51234"
+			}
+		},
+		"misc": {
+			"title": "Sonstiges",
+			"message": "Persönliche Nachricht / Hinweise / Anmerkungen",
+			"placeholder": "Deine Nachricht hier..."
+		},
+		"submit": "Anfrage absenden",
+		"success": "Anfrage erfolgreich abgesendet"
+	},
+	"legalNotice": {
+		"title": "IMPRESSUM",
+		"addressHeading": "Anschrift Kindertagespflege",
+		"name": "Sandra Diner",
+		"address": "Niederpleiserstr. 97, 53757 Sankt Augustin",
+		"phoneNumber": "0163 6912191",
+		"email": "kindertagespflege-haus-sonnenschein@web.de",
+		"jobTitle": "Freiberufler"
+	},
+	"footer": {
+		"nav": {
+			"home": "Home",
+			"childminder": "Tagesmutter",
+			"premises": "Räumlichkeiten",
+			"care": "Betreuung",
+			"contact": "Kontakt",
+			"legalNotice": "Impressum"
+		},
+		"credits": "Design von Sophia Precker"
+	}
+}

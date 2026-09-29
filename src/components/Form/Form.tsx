@@ -9,11 +9,13 @@ import styles from "./Form.module.scss";
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
 import { IFormInput } from "./Form.types";
+import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Form = () => {
 	const { handleSubmit, control, formState, reset } = useForm<IFormInput>();
 	const form = useRef<HTMLFormElement>(null);
 	const [success, setSuccess] = useState(false);
+	const { t } = useTranslation();
 
 	const handleSubmitData = () => {
 		if (form.current !== undefined && form.current !== null)
@@ -22,7 +24,7 @@ const Form = () => {
 					"service_lisecdf",
 					"template_upr3gqo",
 					form.current,
-					"6ejAO_oWgLdchGR_-"
+					"6ejAO_oWgLdchGR_-",
 				)
 				.then(
 					(result) => {
@@ -30,7 +32,7 @@ const Form = () => {
 					},
 					(error) => {
 						console.log(error.text);
-					}
+					},
 				);
 	};
 
@@ -67,7 +69,7 @@ const Form = () => {
 				},
 				() => {
 					setSuccess(false);
-				}
+				},
 			)}
 			ref={form}
 			className={styles.form}
@@ -77,14 +79,14 @@ const Form = () => {
 					type="body-semibold"
 					className={styles.form__success}
 				>
-					Anfrage erfolgreich abgesendet
+					{t("contact.success")}
 				</Typography>
 			)}
-			<Typography type="h2">Daten Elternteil</Typography>
+			<Typography type="h2">{t("contact.parentData.title")}</Typography>
 			<div className={styles.form__section}>
 				<InputField
-					label="Vorname"
-					placeholder="Jonas"
+					label={t("contact.parentData.firstName")}
+					placeholder={t("contact.parentData.placeholders.firstName")}
 					control={control}
 					name="elternVorname"
 					rules={{
@@ -92,7 +94,7 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Nachname"
+					label={t("contact.parentData.lastName")}
 					placeholder="Mustermann"
 					control={control}
 					name="elternNachname"
@@ -101,7 +103,7 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="E-Mail Adresse"
+					label={t("contact.parentData.email")}
 					type="email"
 					placeholder="jonas.mustermann@mail.com"
 					control={control}
@@ -111,9 +113,9 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Mobilnummer"
+					label={t("contact.parentData.phone")}
 					type="tel"
-					placeholder="0176 123456"
+					placeholder={t("contact.parentData.placeholders.phone")}
 					control={control}
 					name="elternMobilnummer"
 					rules={{
@@ -121,11 +123,11 @@ const Form = () => {
 					}}
 				/>
 			</div>
-			<Typography type="h2">Daten Kind</Typography>
+			<Typography type="h2">{t("contact.childData.title")}</Typography>
 			<div className={styles.form__section}>
 				<InputField
-					label="Vorname"
-					placeholder="Lena"
+					label={t("contact.childData.firstName")}
+					placeholder={t("contact.childData.placeholders.firstName")}
 					control={control}
 					name="kindVorname"
 					rules={{
@@ -133,8 +135,8 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Nachname"
-					placeholder="Mustermann"
+					label={t("contact.childData.lastName")}
+					placeholder={t("contact.childData.placeholders.lastName")}
 					control={control}
 					name="kindNachname"
 					rules={{
@@ -142,7 +144,7 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Geburtstag"
+					label={t("contact.childData.birthday")}
 					type="date"
 					control={control}
 					name="kindGeburtstag"
@@ -152,10 +154,10 @@ const Form = () => {
 					}}
 				/>
 			</div>
-			<Typography type="h2">Betreuungsdaten</Typography>
+			<Typography type="h2">{t("contact.careData.title")}</Typography>
 			<div className={styles.form__section}>
 				<InputField
-					label="Betreuungsstart"
+					label={t("contact.careData.startDate")}
 					type="date"
 					control={control}
 					name="start"
@@ -164,7 +166,7 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Betreuungsende"
+					label={t("contact.careData.endDate")}
 					type="date"
 					control={control}
 					name="ende"
@@ -173,11 +175,11 @@ const Form = () => {
 					}}
 				/>
 			</div>
-			<Typography type="h2">Anschrift</Typography>
+			<Typography type="h2">{t("contact.address.title")}</Typography>
 			<div className={styles.form__section}>
 				<InputField
-					label="Straße"
-					placeholder="Musterstraße"
+					label={t("contact.address.street")}
+					placeholder={t("contact.address.placeholders.street")}
 					control={control}
 					name="strasse"
 					rules={{
@@ -185,8 +187,8 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Hausnummer"
-					placeholder="123"
+					label={t("contact.address.houseNumber")}
+					placeholder={t("contact.address.placeholders.houseNumber")}
 					control={control}
 					name="hausnummer"
 					rules={{
@@ -194,8 +196,8 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Stadt"
-					placeholder="Musterstadt"
+					label={t("contact.address.city")}
+					placeholder={t("contact.address.placeholders.city")}
 					control={control}
 					name="stadt"
 					rules={{
@@ -203,8 +205,8 @@ const Form = () => {
 					}}
 				/>
 				<InputField
-					label="Postleitzahl"
-					placeholder="51234"
+					label={t("contact.address.postalCode")}
+					placeholder={t("contact.address.placeholders.postalCode")}
 					control={control}
 					name="plz"
 					rules={{
@@ -212,18 +214,19 @@ const Form = () => {
 					}}
 				/>
 			</div>
-			<Typography type="h2">Sonstiges</Typography>
+			{/* TODO: Add Wie hast du von mir erfahren? Empfehlung; LittleBird; Google Maps; Suchmaschine; Jugendamt */}
+			<Typography type="h2">{t("contact.misc.title")}</Typography>
 			<div className={styles.form__section}>
 				<InputField
-					label="Persönliche Nachricht / Hinweise / Anmerkungen"
-					placeholder="Deine Nachricht hier..."
+					label={t("contact.misc.message")}
+					placeholder={t("contact.misc.placeholder")}
 					control={control}
 					name="message"
 					inputType="textarea"
 				/>
 			</div>
 			<ButtonPrimary iconLeft={<Icon icon="arrow_right" />} type="submit">
-				Anfrage absenden
+				{t("contact.submit")}
 			</ButtonPrimary>
 		</form>
 	);
