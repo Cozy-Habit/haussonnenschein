@@ -1,11 +1,13 @@
-.layout{
-    &__main {
-        flex-grow: 1;
-        margin-top: 60px;
-    }
-    @media (min-width: 820px){
-        &__main{
-            margin-top: 120px;
-        }
-    }
+.layout {
+	&__main {
+		margin-top: 60px;
+	}
+	footer {
+		margin-top: auto;
+	}
+	@media (min-width: 820px) {
+		&__main {
+			margin-top: 120px;
+		}
+	}
 }

@@ -9,9 +9,11 @@ import Typography from "./Typography/Typography";
 import InputField from "./InputField/InputField";
 import Form from "./Form/Form";
 import Title from "./Title/Title";
+import MultiStepForm from "./MultiStepForm/MultiStepForm";
 
 export {
 	Title,
+	MultiStepForm,
 	Gallery,
 	ButtonPrimary,
 	Section,

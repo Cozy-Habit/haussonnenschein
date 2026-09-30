@@ -1,6 +1,6 @@
 "use client";
 
-import { Form, Title } from "@/components";
+import { Title, MultiStepForm } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Page = () => {
@@ -8,7 +8,7 @@ const Page = () => {
 	return (
 		<>
 			<Title text={t("contact.title")} />
-			<Form />
+			<MultiStepForm />
 		</>
 	);
 };

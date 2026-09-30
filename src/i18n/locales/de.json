@@ -100,6 +100,9 @@
 	},
 	"contact": {
 		"title": "KONTAKT",
+		"nextBtn": "Weiter",
+		"backBtn": "Zurück",
+		"submitBtn": "Anfrage absenden",
 		"parentData": {
 			"title": "Daten Elternteil",
 			"firstName": "Vorname",
@@ -128,7 +131,7 @@
 			"startDate": "Betreuungsstart",
 			"endDate": "Betreuungsende"
 		},
-		"address": {
+		"addressData": {
 			"title": "Anschrift",
 			"street": "Straße",
 			"houseNumber": "Hausnummer",
@@ -141,13 +144,23 @@
 				"postalCode": "51234"
 			}
 		},
-		"misc": {
+		"miscData": {
 			"title": "Sonstiges",
 			"message": "Persönliche Nachricht / Hinweise / Anmerkungen",
-			"placeholder": "Deine Nachricht hier..."
+			"referral": "Wie hast du von mir gehört?",
+			"placeholders": {
+				"message": "Deine Nachricht hier..."
+			},
+			"options": {
+				"referral": ";Empfehlung; LittleBird; Google Maps; Suchmaschine; Jugendamt"
+			}
 		},
 		"submit": "Anfrage absenden",
-		"success": "Anfrage erfolgreich abgesendet"
+		"reset": "Neue Anfrage erstellen",
+		"success": {
+			"title": "Anfrage erfolgreich abgesendet",
+			"subtitle": "Ich werde deine Anfrage schnellstmöglich bearbeiten"
+		}
 	},
 	"legalNotice": {
 		"title": "IMPRESSUM",

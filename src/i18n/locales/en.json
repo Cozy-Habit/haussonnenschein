@@ -101,6 +101,9 @@
 	},
 	"contact": {
 		"title": "CONTACT",
+		"nextBtn": "Next",
+		"backBtn": "Back",
+		"submitBtn": "Submit request",
 		"parentData": {
 			"title": "Parent Details",
 			"firstName": "First Name",
@@ -129,7 +132,7 @@
 			"startDate": "Care Start Date",
 			"endDate": "Care End Date"
 		},
-		"address": {
+		"addressData": {
 			"title": "Address",
 			"street": "Street",
 			"houseNumber": "House Number",
@@ -142,13 +145,23 @@
 				"postalCode": "51234"
 			}
 		},
-		"misc": {
+		"miscData": {
 			"title": "Additional Information",
 			"message": "Personal Message / Notes / Remarks",
-			"placeholder": "Your message here..."
+			"referral": "How did you find out about me?",
+			"placeholders": {
+				"message": "Your message here..."
+			},
+			"options": {
+				"referral": ";Recommendation; LittleBird; Google Maps; Search engine; Youth welfare office"
+			}
 		},
 		"submit": "Submit Request",
-		"success": "Submission successful"
+		"reset": "Create new request",
+		"success": {
+			"title": "Submission successful",
+			"subtitle": "I will process your request as soon as possible"
+		}
 	},
 	"legalNotice": {
 		"title": "LEGAL NOTICE",
