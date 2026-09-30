@@ -1,12 +1,13 @@
 "use client";
 
 import Typography from "@/components/Typography/Typography";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./MenuItem.module.scss";
 import clsx from "clsx";
 import MenuItemProps from "./MenuItem.types";
 import { useIsMobile } from "../../../../hooks";
+import { useRouter } from "next/navigation";
+import Button from "@/components/Button/Button";
 
 function MenuItem({ href, label, onClick }: MenuItemProps) {
 	const pathname = usePathname();
@@ -15,7 +16,7 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 
 	return (
 		<li>
-			<Link href={href} className={styles.menuItem} onClick={onClick}>
+			<Button className={styles.menuItem} onClick={handleClick}>
 				<Typography
 					type={isMobile ? "h1" : "h2"}
 					fontFamily="lilita"
@@ -26,7 +27,7 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 				>
 					{isActive ? label.toUpperCase() : label}
 				</Typography>
-			</Link>
+			</Button>
 		</li>
 	);
 }

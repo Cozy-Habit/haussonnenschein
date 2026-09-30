@@ -55,7 +55,7 @@ export default function Betreuung() {
 					<Typography type="body-semibold">
 						{t("care.dailyRoutine.content")}
 					</Typography>
-					<div>
+					<div className={styles.section__images}>
 						<Image
 							src="assets/betreuung/02.svg"
 							alt=""
@@ -69,7 +69,6 @@ export default function Betreuung() {
 							height={300}
 						/>
 					</div>
-					<img src="" alt="" />
 				</div>
 			</div>
 			<div className={styles.sectionWrapper}>
@@ -136,7 +135,7 @@ export default function Betreuung() {
 					<Typography type="body-semibold">
 						{t("care.events.content")}
 					</Typography>
-					<div>
+					<div className={styles.section__images}>
 						<Image
 							src="assets/betreuung/04.svg"
 							alt=""
