@@ -13,7 +13,7 @@ const InputField = ({
 	inputType = "input",
 	className,
 	...props
-}: InputFieldProps & Partial<UseControllerProps<IFormInput>>) => {
+}: InputFieldProps & UseControllerProps<IFormInput>) => {
 	const uuid = useId();
 	const { field, fieldState } = useController(props);
 	const Input = inputType === "input" ? "input" : "textarea";
