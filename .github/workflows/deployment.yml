@@ -39,3 +39,4 @@ jobs:
                   local_path: "./out/*"
                   remote_path: "/home/${{ secrets.STRATO_USERNAME }}/www/"
                   sftp_only: true
+                  sftpArgs: "-vvv"
