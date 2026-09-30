@@ -28,26 +28,17 @@ jobs:
               shell: bash
             - name: Verify static export
               run: test -s out/index.html
-            - name: Deploy artifacts
-              uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+            # Automatically upload files to STRATO via SFTP
+            - name: SFTP Deploy
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
               with:
+                  server: ${{ secrets.STRATO_SERVER }}
                   username: ${{ secrets.STRATO_USERNAME }}
-                  server: "ssh.strato.de"
-                  port: 22
-                  local_path: "./out/*"
-                  remote_path: "/home/${{ secrets.STRATO_USERNAME }}/www/"
-                  ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-#  # Step 3: Automatically upload files to STRATO via SFTP
-#             - name: SFTP Deploy
-#               uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-#               with:
-#                 server: ${{ secrets.SFTP_SERVER }}
-#                 username: ${{ secrets.SFTP_USERNAME }}
-#                 password: ${{ secrets.SFTP_PASSWORD }}
-#                 port: 22 # Standard SFTP port
-#                 # Change 'local-dir' if your static files are generated in a folder like './dist' or './build'
-#                 local-dir: ./
-#                 # Target path inside your STRATO server. Default root directory is usually sufficient.
-#                 server-dir: ./
-#                 # Prevents older, unneeded files from piling up on the webserver
-#                 delete-clean: false
+                  password: ${{ secrets.STRATO_PASSWORD }}
+                  port: 22 # Standard SFTP port
+                  # Change 'local-dir' if your static files are generated in a folder like './dist' or './build'
+                  local-dir: "./out/*"
+                  # Target path inside your STRATO server. Default root directory is usually sufficient.
+                  server-dir: "/home/${{ secrets.STRATO_USERNAME }}/www/"
+                  # Prevents older, unneeded files from piling up on the webserver
+                  delete-clean: false
