@@ -16,7 +16,7 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 
 	return (
 		<li>
-			<Button className={styles.menuItem} onClick={handleClick}>
+			<Button className={styles.menuItem} onClick={onClick}>
 				<Typography
 					type={isMobile ? "h1" : "h2"}
 					fontFamily="lilita"

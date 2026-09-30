@@ -27,18 +27,16 @@ export default function Tagesmutter() {
 				backgroundColor="white"
 				text={
 					<>
-						{[
-							t("childminder.qualifications.content"),
-							<br />,
-							<br />,
-							<ul>
-								{t("childminder.qualifications.items")
-									.split(";")
-									.map((item) => (
-										<li key={item}>{item}</li>
-									))}
-							</ul>,
-						]}
+						{t("childminder.qualifications.content")}
+						<br />
+						<br />
+						<ul>
+							{t("childminder.qualifications.items")
+								.split(";")
+								.map((item) => (
+									<li key={item}>{item}</li>
+								))}
+						</ul>
 					</>
 				}
 				image={
