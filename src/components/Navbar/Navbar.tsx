@@ -5,9 +5,11 @@ import MenuItem from "./components/MenuItem/MenuItem";
 import styles from "./Navbar.module.scss";
 import clsx from "clsx";
 import Icon from "../Icon/Icon";
+import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
+	const { lang, setLang, t, supportedLang } = useTranslation();
 
 	const handleHamburgerClick = () => {
 		if (open) {
@@ -29,27 +31,27 @@ const Navbar = () => {
 				>
 					<MenuItem
 						href="/"
-						label="Home"
+						label={t("nav.home")}
 						onClick={() => setOpen(false)}
 					/>
 					<MenuItem
 						href="/Tagesmutter"
-						label="Tagesmutter"
+						label={t("nav.childminder")}
 						onClick={() => setOpen(false)}
 					/>
 					<MenuItem
 						href="/Raeumlichkeiten"
-						label="Räumlichkeiten"
+						label={t("nav.premises")}
 						onClick={() => setOpen(false)}
 					/>
 					<MenuItem
 						href="/Betreuung"
-						label="Betreuung"
+						label={t("nav.care")}
 						onClick={() => setOpen(false)}
 					/>
 					<MenuItem
 						href="/Kontakt"
-						label="Kontakt"
+						label={t("nav.contact")}
 						onClick={() => setOpen(false)}
 					/>
 				</ul>
@@ -60,6 +62,21 @@ const Navbar = () => {
 					<Icon icon="hamburger" />
 				</button>
 			</nav>
+			<div className={styles.languageSwitch} role="group" aria-label="Language">
+				{supportedLang.map((language) => {
+					return (
+						<button
+							key={language}
+							type="button"
+							className={styles.languageSwitch__option}
+							aria-pressed={language === lang}
+							onClick={() => setLang(language)}
+						>
+							{language.toUpperCase()}
+						</button>
+					);
+				})}
+			</div>
 		</header>
 	);
 };

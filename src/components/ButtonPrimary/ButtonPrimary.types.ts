@@ -6,7 +6,7 @@ import IconProps from "../Icon/Icon.types";
 // ButtonProps is a union type and extending an interface with a union type causes issues for some reason
 
 export type ButtonPrimaryProps = ButtonProps & {
-  iconLeft: ReactElement<IconProps>;
+	iconLeft?: ReactElement<IconProps>;
 };
 
 //before: interface ButtonPrimaryProps extends ButtonProps -> interface cannot extend union types

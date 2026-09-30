@@ -1,22 +1,33 @@
+"use client";
+
+import { useTranslation } from "@/i18n/LanguageProvider";
 import styles from "./Impressum.module.scss";
-import { Typography, Headline } from "@/components";
+import { Typography, Title } from "@/components";
 
 export default function Impressum() {
+	const { t } = useTranslation();
 	return (
 		<div className={styles.impressum}>
-			<Headline src="/assets/headlines/impressum.svg" alt="Impressum" />
-
+			<Title text={t("legalNotice.title")} />
 			<div className={styles["impressum__container"]}>
-				<Typography type="h2">Anschrift Kindertagespflege</Typography>
-				<Typography type="body-regular">Sandra Diner</Typography>
-				<Typography type="body-regular">
-					Niederpleiserstr. 97, 53757 Sankt Augustin
+				<Typography type="h2">
+					{t("legalNotice.addressHeading")}
 				</Typography>
-				<Typography type="body-regular">0163 6912191</Typography>
 				<Typography type="body-regular">
-					kindertagespflege-haus-sonnenschein@web.de
+					{t("legalNotice.name")}
 				</Typography>
-				<Typography type="body-regular">Freiberufler</Typography>
+				<Typography type="body-regular">
+					{t("legalNotice.address")}
+				</Typography>
+				<Typography type="body-regular">
+					{t("legalNotice.phoneNumber")}
+				</Typography>
+				<Typography type="body-regular">
+					{t("legalNotice.email")}
+				</Typography>
+				<Typography type="body-regular">
+					{t("legalNotice.jobTitle")}
+				</Typography>
 			</div>
 		</div>
 	);

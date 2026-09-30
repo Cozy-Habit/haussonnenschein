@@ -2,7 +2,6 @@
 
 import Typography from "@/components/Typography/Typography";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 import styles from "./MenuItem.module.scss";
 import clsx from "clsx";
 import MenuItemProps from "./MenuItem.types";
@@ -12,27 +11,9 @@ import Button from "@/components/Button/Button";
 
 function MenuItem({ href, label, onClick }: MenuItemProps) {
 	const pathname = usePathname();
-	const [activeClassName, setActiveClassName] = useState(false);
 	const isMobile = useIsMobile();
-	const router = useRouter();
+	const isActive = pathname === href;
 
-	const handleClick = () => {
-		router.push(href);
-		onClick && onClick();
-	};
-
-	useEffect(() => {
-		// remove trailing slash
-		let myPathname = pathname;
-		if (pathname.endsWith("/") && pathname !== "/") {
-			myPathname = pathname.slice(0, -1);
-		}
-		// active or not active thats the question
-		const isActive = myPathname == href;
-		setActiveClassName(isActive);
-	}, [href, pathname]);
-
-	console.log(activeClassName);
 	return (
 		<li>
 			<Button className={styles.menuItem} onClick={handleClick}>
@@ -41,10 +22,10 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 					fontFamily="lilita"
 					as="span"
 					className={clsx({
-						[styles["menuItem--active"]]: activeClassName,
+						[styles["menuItem--active"]]: isActive,
 					})}
 				>
-					{activeClassName ? label.toUpperCase() : label}
+					{isActive ? label.toUpperCase() : label}
 				</Typography>
 			</Button>
 		</li>

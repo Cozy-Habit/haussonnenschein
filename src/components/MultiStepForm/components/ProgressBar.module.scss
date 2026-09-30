@@ -1,0 +1,124 @@
+.progress {
+	position: relative;
+	margin-bottom: 26px;
+}
+
+.steps {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.track {
+	position: absolute;
+	top: 14px;
+	right: 8.3%;
+	left: 8.3%;
+	height: 3px;
+	background: #eee6dc;
+	z-index: 0;
+
+	span {
+		display: block;
+		height: 100%;
+		border-radius: 3px;
+		background: var(--accent_1);
+		transition: width 220ms ease;
+	}
+}
+
+.step {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	color: #9b9187;
+	text-align: center;
+}
+
+.marker {
+	display: grid;
+	width: 30px;
+	height: 30px;
+	place-items: center;
+	border: 2px solid #e7ddd0;
+	border-radius: 50%;
+	background: #fff;
+	color: #8b8177;
+	font-size: 1rem;
+	font-weight: 700;
+	transition:
+		color 160ms ease,
+		background-color 160ms ease,
+		border-color 160ms ease,
+		box-shadow 160ms ease;
+}
+
+.label {
+	max-width: 100%;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.25;
+	word-break: normal;
+}
+
+.completed {
+	color: #5d5146;
+
+	.marker {
+		border-color: var(--accent_1);
+		background: var(--accent_1);
+		color: #fff;
+	}
+
+	&[aria-current="step"] .marker {
+		box-shadow: 0 0 0 4px rgba(233, 121, 58, 0.17);
+	}
+}
+
+.summary {
+	display: none;
+}
+
+@media (max-width: 680px) {
+	.progress {
+		margin-bottom: 20px;
+	}
+
+	.steps {
+		grid-template-columns: repeat(6, 30px);
+		justify-content: space-between;
+	}
+
+	.track {
+		right: 15px;
+		left: 15px;
+	}
+
+	.label {
+		display: none;
+	}
+
+	.summary {
+		display: flex;
+		justify-content: space-between;
+		gap: 12px;
+		margin-top: 10px;
+		color: #766d65;
+		font-size: 1rem;
+		font-weight: 700;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.track span,
+	.marker {
+		transition: none;
+	}
+}

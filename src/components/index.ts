@@ -3,11 +3,25 @@ import Footer from "./Footer/Footer";
 import Icon from "./Icon/Icon";
 import Section from "./Section/Section";
 import Navbar from "./Navbar/Navbar";
-import Headline from "./Headline/Headline";
-import Gallery from './Gallery/Gallery';
-import Hero from './Hero/Hero';
+import Gallery from "./Gallery/Gallery";
+import Hero from "./Hero/Hero";
 import Typography from "./Typography/Typography";
 import InputField from "./InputField/InputField";
 import Form from "./Form/Form";
+import Title from "./Title/Title";
+import MultiStepForm from "./MultiStepForm/MultiStepForm";
 
-export { Gallery, ButtonPrimary, Section, Icon, Footer, Navbar, Headline, Hero, Typography, InputField, Form };
+export {
+	Title,
+	MultiStepForm,
+	Gallery,
+	ButtonPrimary,
+	Section,
+	Icon,
+	Footer,
+	Navbar,
+	Hero,
+	Typography,
+	InputField,
+	Form,
+};

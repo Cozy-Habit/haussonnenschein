@@ -18,23 +18,23 @@ const Section = ({
 		<div
 			className={clsx(
 				styles.sectionWrapper,
-				styles[`sectionWrapper--${backgroundColor}`]
+				styles[`sectionWrapper--${backgroundColor}`],
 			)}
 		>
 			<div className={styles.section}>
-				{headline && <h2>{headline}</h2>}
+				{headline}
 				<div className={styles.section__content}>
 					<div
 						className={clsx(styles.section__text, {
 							[styles["section--isReverse"]]: isReverse,
 						})}
 					>
-						{headline && title && (
+						{title && title && (
 							<Typography type="h3" fontFamily="lilita">
 								{title}
 							</Typography>
 						)}
-						{!headline && title && (
+						{!title && title && (
 							<Typography type="h2" fontFamily="lilita">
 								{title}
 							</Typography>

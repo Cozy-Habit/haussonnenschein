@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import Typography from "../Typography/Typography";
 import styles from "./Hero.module.scss";
+import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Hero = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={styles.hero}>
 			<Image
@@ -13,7 +16,7 @@ const Hero = () => {
 				className={styles["hero__img0"]}
 			/>
 			<Typography type="h2" as="h1" className={styles.hero__title}>
-				Kindertagespflege in Sankt Augustin U3
+				{t("home.hero.subtitle")}
 			</Typography>
 			<div className={styles["hero__images"]}>
 				<Image
