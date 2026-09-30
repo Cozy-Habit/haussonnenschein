@@ -30,15 +30,13 @@ jobs:
               run: test -s out/index.html
             # Automatically upload files to STRATO via SFTP
             - name: SFTP Deploy
-              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              uses: wlixcc/SFTP-Deploy-Action@v1.2.6
               with:
-                  server: ${{ secrets.STRATO_SERVER }}
-                  username: ${{ secrets.STRATO_USERNAME }}
-                  password: ${{ secrets.STRATO_PASSWORD }}
-                  port: 22 # Standard SFTP port
-                  # Change 'local-dir' if your static files are generated in a folder like './dist' or './build'
-                  local-dir: "./out/"
-                  # Target path inside your STRATO server. Default root directory is usually sufficient.
-                  server-dir: "/home/${{ secrets.STRATO_USERNAME }}/www/"
-                  # Prevents older, unneeded files from piling up on the webserver
-                  delete-clean: false
+              server: ${{ secrets.SFTP_SERVER }} # Value: ssh.strato.de (or your specific STRATO SFTP server name)
+              username: ${{ secrets.SFTP_USERNAME }} # Your STRATO SFTP login
+              password: ${{ secrets.SFTP_PASSWORD }} # Your STRATO SFTP password
+              port: 22 # Pure SFTP port
+              local_path: "./out/" # Absolute path to your files inside GitHub runner
+              remote_path: "/home/${{ secrets.STRATO_USERNAME }}/www/" # Destination folder on your STRATO webspace
+              sftp_only: true # Disables alternative protocols
+
