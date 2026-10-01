@@ -1,0 +1,58 @@
+.testimonials {
+	padding: 64px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: #fff;
+
+	&__list {
+		display: flex;
+		list-style: none;
+		gap: 2rem;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 1rem max(1rem, calc((100% - 40rem) / 2));
+		overflow-x: auto;
+		overflow-y: hidden;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: max(1rem, calc((100% - 40rem) / 2));
+		overscroll-behavior-inline: contain;
+		scrollbar-width: none;
+	}
+	&__item {
+		display: flex;
+		flex: 0 0 min(40rem, calc(100vw - 2rem));
+		box-sizing: border-box;
+		gap: 1rem;
+		border-radius: 1rem;
+		padding: 1rem;
+		outline: 4px solid var(--outline);
+		box-shadow: 0px 0px 20px rgba(92, 85, 67, 0.1);
+		scroll-snap-align: center;
+	}
+	&__image {
+		border-radius: 100%;
+		object-fit: cover;
+	}
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		margin: auto;
+	}
+	&__dotList {
+		display: flex;
+		gap: 1rem;
+	}
+	&__dotItem {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 100%;
+		background-color: lightgray;
+		&--active {
+			background-color: var(--accent_3);
+		}
+	}
+}

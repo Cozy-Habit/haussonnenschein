@@ -1,6 +1,6 @@
 "use client";
 
-import { Section, Title } from "@/components";
+import { Section, ColorfulText } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function Tagesmutter() {
 
 	return (
 		<>
-			<Title type="h1" text={t("childminder.title")} />
+			<ColorfulText type="h1" text={t("childminder.title")} />
 			<Section
 				backgroundColor="creme"
 				text={t("childminder.aboutMe.content")}
@@ -31,13 +31,15 @@ export default function Tagesmutter() {
 						{t("childminder.qualifications.content")}
 						<br />
 						<br />
-						<ul>
-							{t("childminder.qualifications.items")
-								.split(";")
-								.map((item) => (
-									<li key={item}>{item}</li>
-								))}
-						</ul>
+
+						{t("childminder.qualifications.items")
+							.split(";")
+							.map((item) => (
+								<span key={item}>
+									{`- ${item}`}
+									<br />
+								</span>
+							))}
 					</>
 				}
 				image={

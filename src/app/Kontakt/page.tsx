@@ -1,13 +1,13 @@
 "use client";
 
-import { Title, MultiStepForm } from "@/components";
+import { ColorfulText, MultiStepForm } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
 
 const Page = () => {
 	const { t } = useTranslation();
 	return (
 		<>
-			<Title type="h1" text={t("contact.title")} />
+			<ColorfulText type="h1" text={t("contact.title")} />
 			<MultiStepForm />
 		</>
 	);

@@ -11,6 +11,15 @@
 			"title": "Haus Sonnenschein",
 			"subtitle": "Child Daycare in Sankt Augustin (Under 3)"
 		},
+		"testimonials": {
+			"title": "Testimonials",
+			"items": [
+				"As a new mom, Sandra was a great support and gave me so much to learn.",
+				"Sandra always cared for Jan with such love and warmth. We are so impressed with her as a person.",
+				"Our little one has developed so well and looked forward to seeing Sandra and the daycare group every day. Simply wonderful!",
+				"We were greeted with beaming smiles every morning. Sandra always actively shared our little treasure's experiences with us."
+			]
+		},
 		"childminder": {
 			"title": "Childminder",
 			"content": "My name is Sandra Diner and I am 49 years old. Originally trained as a self-employed master interior decorator, having my own children led me to discover and fall in love with my true calling:",

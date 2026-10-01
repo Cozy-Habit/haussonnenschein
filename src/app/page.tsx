@@ -1,5 +1,5 @@
 "use client";
-import { Section, Hero, Title } from "@/components";
+import { Section, Hero, ColorfulText, Testimonials } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
 
 export default function Home() {
@@ -8,9 +8,13 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
+			<Testimonials />
+
 			<Section
-				backgroundColor="white"
-				headline={<Title type="h1" text={t("childminder.title")} />}
+				backgroundColor="creme"
+				headline={
+					<ColorfulText type="h1" text={t("childminder.title")} />
+				}
 				text={t("home.childminder.content")}
 				image={<img src="/assets/home/01.png" />}
 				buttonText={t("home.childminder.cta")}
@@ -19,8 +23,8 @@ export default function Home() {
 
 			<Section
 				isReverse={true}
-				backgroundColor="creme"
-				headline={<Title type="h1" text={t("premises.title")} />}
+				backgroundColor="white"
+				headline={<ColorfulText type="h1" text={t("premises.title")} />}
 				text={t("home.premises.content")}
 				image={<img src="/assets/home/02.png" />}
 				buttonText={t("home.premises.cta")}
@@ -28,8 +32,8 @@ export default function Home() {
 			/>
 
 			<Section
-				backgroundColor="white"
-				headline={<Title type="h1" text={t("care.title")} />}
+				backgroundColor="creme"
+				headline={<ColorfulText type="h1" text={t("care.title")} />}
 				text={t("home.care.content")}
 				image={<img src="/assets/home/03.png" />}
 				buttonText={t("home.care.cta")}
@@ -38,8 +42,8 @@ export default function Home() {
 
 			<Section
 				isReverse={true}
-				backgroundColor="creme"
-				headline={<Title type="h1" text={t("contact.title")} />}
+				backgroundColor="white"
+				headline={<ColorfulText type="h1" text={t("contact.title")} />}
 				text={t("home.contact.content")}
 				buttonText={t("home.contact.cta")}
 				buttonHref="/Kontakt"

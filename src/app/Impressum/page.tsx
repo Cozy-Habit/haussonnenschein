@@ -2,13 +2,13 @@
 
 import { useTranslation } from "@/i18n/LanguageProvider";
 import styles from "./Impressum.module.scss";
-import { Typography, Title } from "@/components";
+import { Typography, ColorfulText } from "@/components";
 
 export default function Impressum() {
 	const { t } = useTranslation();
 	return (
 		<div className={styles.impressum}>
-			<Title type="h1" text={t("legalNotice.title")} />
+			<ColorfulText type="h1" text={t("legalNotice.title")} />
 			<div className={styles["impressum__container"]}>
 				<Typography type="h2">
 					{t("legalNotice.addressHeading")}

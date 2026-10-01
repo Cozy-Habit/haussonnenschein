@@ -1,16 +1,17 @@
 :root {
-    --accent_1: #E9793A;
-    --accent_2: #F98A93;
-    --accent_3: #FECB89;
-    --accent_4: #ABDAEC;
-    //header
-    --navbar_background: #fff;
-    --uicard_background: #fff;
-    //main
-    --main_background: #F7F4EB;
-    //footer
-    --footer_background: #fff;
-    //button-primary
-    --button-primary-default: var(--accent_1);
-    --button-primary-hover: #994312;
+	--accent_1: #e9793a;
+	--accent_2: #f98a93;
+	--accent_3: #fecb89;
+	--accent_4: #abdaec;
+	//header
+	--navbar_background: #fff;
+	--uicard_background: #fff;
+	//main
+	--main_background: #f7f4eb;
+	--outline: #f7f4eb;
+	//footer
+	--footer_background: #fff;
+	//button-primary
+	--button-primary-default: var(--accent_1);
+	--button-primary-hover: #994312;
 }

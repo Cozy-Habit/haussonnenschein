@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Title, Typography } from "@/components";
+import { ColorfulText, Typography } from "@/components";
 import styles from "./page.module.scss";
 import { useTranslation } from "@/i18n/LanguageProvider";
 
@@ -9,7 +9,7 @@ export default function Betreuung() {
 	const { t } = useTranslation();
 	return (
 		<>
-			<Title type="h1" text={t("care.title")} />
+			<ColorfulText type="h1" text={t("care.title")} />
 			<div className={styles.sectionWrapper}>
 				<div className={styles.section}>
 					<Typography type="h1" as="h2" fontFamily="lilita">
