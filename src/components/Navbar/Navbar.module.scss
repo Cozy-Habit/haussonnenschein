@@ -52,6 +52,7 @@
 		align-items: center;
 		margin: 35px 0px 0px 0px;
 		position: absolute;
+
 		&__menu {
 			display: inline-flex; //makes ul hug li
 			justify-content: center;
@@ -66,9 +67,6 @@
 				transition: 0.3s;
 				text-decoration: none;
 			}
-		}
-		&__button {
-			display: none;
 		}
 	}
 }
@@ -102,6 +100,9 @@
 				padding-top: 24px;
 			}
 		}
+		&--open {
+			display: flex;
+		}
 		&__button {
 			background-color: unset;
 			border: none;
@@ -116,9 +117,6 @@
 			&:focus {
 				opacity: 1;
 			}
-		}
-		&--open {
-			display: flex;
 		}
 	}
 }

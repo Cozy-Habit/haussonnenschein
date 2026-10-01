@@ -6,10 +6,12 @@ import styles from "./Navbar.module.scss";
 import clsx from "clsx";
 import Icon from "../Icon/Icon";
 import { useTranslation } from "@/i18n/LanguageProvider";
+import { useIsMobile } from "@/hooks";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	const { lang, setLang, t, supportedLang } = useTranslation();
+	const isMobile = useIsMobile();
 
 	const handleHamburgerClick = () => {
 		if (open) {
@@ -22,47 +24,59 @@ const Navbar = () => {
 	return (
 		<header className={styles.wrapper}>
 			<nav className={styles.navbar}>
-				<Clouds />
-				<ul
-					id="menuItems"
-					className={clsx(styles["navbar__menu"], {
-						[styles["navbar--open"]]: open,
-					})}
-				>
-					<MenuItem
-						href="/"
-						label={t("nav.home")}
-						onClick={() => setOpen(false)}
-					/>
-					<MenuItem
-						href="/Tagesmutter"
-						label={t("nav.childminder")}
-						onClick={() => setOpen(false)}
-					/>
-					<MenuItem
-						href="/Raeumlichkeiten"
-						label={t("nav.premises")}
-						onClick={() => setOpen(false)}
-					/>
-					<MenuItem
-						href="/Betreuung"
-						label={t("nav.care")}
-						onClick={() => setOpen(false)}
-					/>
-					<MenuItem
-						href="/Kontakt"
-						label={t("nav.contact")}
-						onClick={() => setOpen(false)}
-					/>
-				</ul>
-				<button
-					onClick={handleHamburgerClick}
-					className={styles.navbar__button}
-				>
-					<Icon icon="hamburger" />
-				</button>
+				<>
+					<Clouds />
+					<ul
+						id="menuItems"
+						className={clsx(styles["navbar__menu"], {
+							[styles["navbar--open"]]: open,
+						})}
+					>
+						<MenuItem
+							href="/"
+							label={t("nav.home")}
+							onClick={() => setOpen(false)}
+						/>
+						<MenuItem
+							href="/Tagesmutter"
+							label={t("nav.childminder")}
+							onClick={() => setOpen(false)}
+						/>
+						<MenuItem
+							href="/Raeumlichkeiten"
+							label={t("nav.premises")}
+							onClick={() => setOpen(false)}
+						/>
+						<MenuItem
+							href="/Betreuung"
+							label={t("nav.care")}
+							onClick={() => setOpen(false)}
+						/>
+						<MenuItem
+							href="/Kontakt"
+							label={t("nav.contact")}
+							onClick={() => setOpen(false)}
+						/>
+					</ul>
+					{isMobile && (
+						<button
+							onClick={handleHamburgerClick}
+							className={styles.navbar__button}
+						>
+							<Icon
+								icon={
+									open ? "hamburger_close" : "hamburger_open"
+								}
+							/>
+						</button>
+					)}
+				</>
 			</nav>
-			<div className={styles.languageSwitch} role="group" aria-label="Language">
+			<div
+				className={styles.languageSwitch}
+				role="group"
+				aria-label="Language"
+			>
 				{supportedLang.map((language) => {
 					return (
 						<button
