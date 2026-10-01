@@ -4,9 +4,12 @@ import Typography from "../Typography/Typography";
 import styles from "./Hero.module.scss";
 import { useTranslation } from "@/i18n/LanguageProvider";
 import { motion } from "framer-motion";
+import { useWindowSize } from "@/hooks";
 
 const Hero = () => {
 	const { t } = useTranslation();
+	const [width] = useWindowSize();
+	const isSmallScreen = width < 635;
 	return (
 		<motion.div
 			className={styles.hero}
@@ -29,40 +32,42 @@ const Hero = () => {
 			<Typography type="h2" as="h1" className={styles.hero__title}>
 				{t("home.hero.subtitle")}
 			</Typography>
-			<div className={styles["hero__images"]}>
-				<Image
-					alt="Haus Sonnenschein"
-					width={260.24}
-					height={346.99}
-					className={styles["hero__img1"]}
-					src="/assets/home/hero_01.png"
-					priority
-				/>
-				<Image
-					alt=""
-					width={270.38}
-					height={415.72}
-					className={styles["hero__img2"]}
-					src="/assets/home/hero_02.png"
-					priority
-				/>
-				<Image
-					alt=""
-					width={306.36}
-					height={394.42}
-					className={styles["hero__img3"]}
-					src="/assets/home/hero_03.png"
-					priority
-				/>
-				<Image
-					alt=""
-					width={270.12}
-					height={360.16}
-					className={styles["hero__img4"]}
-					src="/assets/home/hero_04.png"
-					priority
-				/>
-			</div>
+			{!isSmallScreen && (
+				<div className={styles["hero__images"]}>
+					<Image
+						alt="Haus Sonnenschein"
+						width={260.24}
+						height={346.99}
+						className={styles["hero__img1"]}
+						src="/assets/home/hero_01.png"
+						priority
+					/>
+					<Image
+						alt=""
+						width={270.38}
+						height={415.72}
+						className={styles["hero__img2"]}
+						src="/assets/home/hero_02.png"
+						priority
+					/>
+					<Image
+						alt=""
+						width={306.36}
+						height={394.42}
+						className={styles["hero__img3"]}
+						src="/assets/home/hero_03.png"
+						priority
+					/>
+					<Image
+						alt=""
+						width={270.12}
+						height={360.16}
+						className={styles["hero__img4"]}
+						src="/assets/home/hero_04.png"
+						priority
+					/>
+				</div>
+			)}
 		</motion.div>
 	);
 };

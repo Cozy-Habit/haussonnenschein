@@ -31,12 +31,7 @@ const Section = ({
 						})}
 						delay={0.04}
 					>
-						{title && title && (
-							<Typography type="h3" fontFamily="lilita">
-								{title}
-							</Typography>
-						)}
-						{!title && title && (
+						{title && (
 							<Typography type="h2" fontFamily="lilita">
 								{title}
 							</Typography>

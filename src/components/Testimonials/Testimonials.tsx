@@ -52,6 +52,7 @@ export default function Testimonials() {
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(1);
+	const [firstRender, setFirstRender] = useState(true);
 	const ref = useRef(null);
 	const isLast = TESTIMONIALS.length - 1 === currentIndex;
 	const isFirst = currentIndex === 0;
@@ -67,6 +68,10 @@ export default function Testimonials() {
 	}
 
 	useEffect(() => {
+		if (firstRender) {
+			setFirstRender(false);
+			return;
+		}
 		if (ref === null) return;
 
 		const refMap = getMap(ref);
