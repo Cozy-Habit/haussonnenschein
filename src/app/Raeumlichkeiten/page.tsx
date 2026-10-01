@@ -7,7 +7,7 @@ export default function Raeumlichkeiten() {
 	const { t } = useTranslation();
 	return (
 		<>
-			<Title text={t("premises.title")} />
+			<Title type="h1" text={t("premises.title")} />
 			<Gallery />
 		</>
 	);

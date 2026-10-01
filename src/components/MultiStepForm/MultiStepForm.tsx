@@ -157,13 +157,14 @@ export default function MultiStepForm() {
 					<div className={styles.actions}>
 						{/* LEARNING: buttons inside forms a by default of type submit. This caused the back function to execute but by overwritten by the automatic refresh of the form */}
 						<ButtonPrimary
+							variant="button"
 							type="button"
 							disabled={isFirstStep}
 							onClick={back}
 						>
 							{t("contact.backBtn")}
 						</ButtonPrimary>
-						<ButtonPrimary type="submit">
+						<ButtonPrimary variant="button" type="submit">
 							{isLastStep
 								? t("contact.submitBtn")
 								: t("contact.nextBtn")}
@@ -184,6 +185,7 @@ export default function MultiStepForm() {
 					</Typography>
 				</div>
 				<ButtonPrimary
+					variant="button"
 					onClick={() => {
 						goTo(0);
 						setSuccess(false);

@@ -4,6 +4,7 @@ import clsx from "clsx";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 import Icon from "../Icon/Icon";
 import Typography from "../Typography/Typography";
+import Reveal from "../Reveal/Reveal";
 const Section = ({
 	backgroundColor,
 	headline,
@@ -24,10 +25,11 @@ const Section = ({
 			<div className={styles.section}>
 				{headline}
 				<div className={styles.section__content}>
-					<div
+					<Reveal
 						className={clsx(styles.section__text, {
 							[styles["section--isReverse"]]: isReverse,
 						})}
+						delay={0.04}
 					>
 						{title && title && (
 							<Typography type="h3" fontFamily="lilita">
@@ -43,14 +45,16 @@ const Section = ({
 						{buttonText && (
 							<ButtonPrimary
 								variant="link"
-								href={buttonHref}
+								href={buttonHref ?? ""}
 								iconLeft={<Icon icon="arrow_right" />}
 							>
 								{buttonText}
 							</ButtonPrimary>
 						)}
-					</div>
-					<div className={styles["section__img"]}>{image}</div>
+					</Reveal>
+					<Reveal className={styles["section__img"]} delay={0.16}>
+						{image}
+					</Reveal>
 				</div>
 			</div>
 		</div>

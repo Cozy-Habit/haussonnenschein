@@ -8,6 +8,7 @@ import MenuItemProps from "./MenuItem.types";
 import { useIsMobile } from "../../../../hooks";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button/Button";
+import ColorfulText from "@/components/ColorfulText/ColorfulText";
 
 function MenuItem({ href, label, onClick }: MenuItemProps) {
 	const pathname = usePathname();
@@ -16,17 +17,19 @@ function MenuItem({ href, label, onClick }: MenuItemProps) {
 
 	return (
 		<li>
-			<Button className={styles.menuItem} onClick={onClick}>
-				<Typography
-					type={isMobile ? "h1" : "h2"}
-					fontFamily="lilita"
-					as="span"
-					className={clsx({
-						[styles["menuItem--active"]]: isActive,
-					})}
-				>
-					{isActive ? label.toUpperCase() : label}
-				</Typography>
+			<Button
+				className={styles.menuItem}
+				onClick={onClick}
+				href={href}
+				variant="link"
+			>
+				{isActive ? (
+					<ColorfulText type="h2" as="span" text={label} />
+				) : (
+					<Typography type="h2" fontFamily="lilita" as="span">
+						{label}
+					</Typography>
+				)}
 			</Button>
 		</li>
 	);

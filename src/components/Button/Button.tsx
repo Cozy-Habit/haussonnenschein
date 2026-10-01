@@ -2,22 +2,28 @@
 
 import clsx from "clsx";
 import styles from "./Button.module.scss";
-import { ButtonProps } from "./Button.types";
+import { ButtonProps, LinkProps, CommonProps } from "./Button.types";
+import Link from "next/link";
 
-const Button = ({
-	ariaDescribedBy,
-	ariaLabel,
-	ariaLabelledBy,
-	children,
-	className,
-	role,
-	variant = "button",
-	...props
-}: ButtonProps) => {
-	if (variant === "link")
+function isLink(props: ButtonProps): props is LinkProps & CommonProps {
+	return props.variant === "link";
+}
+
+const Button = (props: ButtonProps) => {
+	const {
+		ariaDescribedBy,
+		ariaLabel,
+		ariaLabelledBy,
+		children,
+		className,
+		role,
+	} = props;
+
+	if (isLink(props)) {
 		return (
-			<a
+			<Link
 				{...props}
+				href={props.href}
 				role={role}
 				aria-label={ariaLabel}
 				aria-labelledby={ariaLabelledBy}
@@ -25,11 +31,13 @@ const Button = ({
 				className={clsx(styles.button, className)}
 			>
 				{children}
-			</a>
+			</Link>
 		);
+	}
 
 	return (
 		<button
+			type="button"
 			{...props}
 			role={role}
 			aria-label={ariaLabel}

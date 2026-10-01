@@ -7,7 +7,7 @@ const Page = () => {
 	const { t } = useTranslation();
 	return (
 		<>
-			<Title text={t("contact.title")} />
+			<Title type="h1" text={t("contact.title")} />
 			<MultiStepForm />
 		</>
 	);

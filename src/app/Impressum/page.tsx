@@ -8,7 +8,7 @@ export default function Impressum() {
 	const { t } = useTranslation();
 	return (
 		<div className={styles.impressum}>
-			<Title text={t("legalNotice.title")} />
+			<Title type="h1" text={t("legalNotice.title")} />
 			<div className={styles["impressum__container"]}>
 				<Typography type="h2">
 					{t("legalNotice.addressHeading")}

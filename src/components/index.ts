@@ -6,13 +6,11 @@ import Navbar from "./Navbar/Navbar";
 import Gallery from "./Gallery/Gallery";
 import Hero from "./Hero/Hero";
 import Typography from "./Typography/Typography";
-import InputField from "./InputField/InputField";
-import Form from "./Form/Form";
-import Title from "./Title/Title";
+import ColorfulText from "./ColorfulText/ColorfulText";
 import MultiStepForm from "./MultiStepForm/MultiStepForm";
 
 export {
-	Title,
+	ColorfulText as Title,
 	MultiStepForm,
 	Gallery,
 	ButtonPrimary,
@@ -22,6 +20,4 @@ export {
 	Navbar,
 	Hero,
 	Typography,
-	InputField,
-	Form,
 };

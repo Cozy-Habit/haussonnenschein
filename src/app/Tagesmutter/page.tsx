@@ -9,16 +9,17 @@ export default function Tagesmutter() {
 
 	return (
 		<>
-			<Title text={t("childminder.title")} />
+			<Title type="h1" text={t("childminder.title")} />
 			<Section
 				backgroundColor="creme"
 				text={t("childminder.aboutMe.content")}
 				image={
 					<Image
-						width={400}
-						height={400}
+						width={284}
+						height={365.64}
 						alt=""
-						src="/assets/tagesmutter/01.svg"
+						src="/assets/tagesmutter/01.png"
+						priority
 					/>
 				}
 				title={t("childminder.aboutMe.title")}
@@ -41,10 +42,11 @@ export default function Tagesmutter() {
 				}
 				image={
 					<Image
-						width={400}
-						height={400}
+						width={284}
+						height={365.64}
 						alt=""
-						src="/assets/tagesmutter/02.svg"
+						src="/assets/tagesmutter/02.png"
+						priority
 					/>
 				}
 				title={t("childminder.qualifications.title")}
@@ -55,10 +57,10 @@ export default function Tagesmutter() {
 				text={t("childminder.family.content")}
 				image={
 					<Image
-						width={400}
-						height={400}
+						width={284}
+						height={365.64}
 						alt=""
-						src="/assets/tagesmutter/03.svg"
+						src="/assets/tagesmutter/03.png"
 					/>
 				}
 				title={t("childminder.family.title")}
@@ -68,10 +70,10 @@ export default function Tagesmutter() {
 				text={t("childminder.familyDog.content")}
 				image={
 					<Image
-						width={400}
-						height={400}
+						width={284}
+						height={365.64}
 						alt=""
-						src="/assets/tagesmutter/04.svg"
+						src="/assets/tagesmutter/04.png"
 					/>
 				}
 				title={t("childminder.familyDog.title")}

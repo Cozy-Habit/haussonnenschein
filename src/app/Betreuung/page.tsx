@@ -9,7 +9,7 @@ export default function Betreuung() {
 	const { t } = useTranslation();
 	return (
 		<>
-			<Title text={t("care.title")} />
+			<Title type="h1" text={t("care.title")} />
 			<div className={styles.sectionWrapper}>
 				<div className={styles.section}>
 					<Typography type="h1" as="h2" fontFamily="lilita">
@@ -57,16 +57,16 @@ export default function Betreuung() {
 					</Typography>
 					<div className={styles.section__images}>
 						<Image
-							src="assets/betreuung/02.svg"
+							src="assets/betreuung/02.png"
 							alt=""
-							width={360}
-							height={300}
+							width={363}
+							height={318}
 						/>
 						<Image
-							src="assets/betreuung/03.svg"
+							src="assets/betreuung/03.png"
 							alt=""
-							width={360}
-							height={300}
+							width={363}
+							height={318}
 						/>
 					</div>
 				</div>
@@ -100,10 +100,10 @@ export default function Betreuung() {
 						{t("care.mealPlan.content")}
 					</Typography>
 					<Image
-						src="assets/betreuung/01.svg"
+						src="assets/betreuung/01.png"
 						alt=""
-						width={350}
-						height={300}
+						width={363}
+						height={318}
 					/>
 				</div>
 			</div>
@@ -137,16 +137,16 @@ export default function Betreuung() {
 					</Typography>
 					<div className={styles.section__images}>
 						<Image
-							src="assets/betreuung/04.svg"
+							src="assets/betreuung/04.png"
 							alt=""
-							width={415}
-							height={300}
+							width={445}
+							height={318}
 						/>
 						<Image
-							src="assets/betreuung/05.svg"
+							src="assets/betreuung/05.png"
 							alt=""
-							width={300}
-							height={300}
+							width={282}
+							height={318}
 						/>
 					</div>
 				</div>

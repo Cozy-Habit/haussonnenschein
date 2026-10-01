@@ -10,9 +10,9 @@ export default function Home() {
 			<Hero />
 			<Section
 				backgroundColor="white"
-				headline={<Title text={t("childminder.title")} />}
+				headline={<Title type="h1" text={t("childminder.title")} />}
 				text={t("home.childminder.content")}
-				image={<img src="/assets/home/01.svg" />}
+				image={<img src="/assets/home/01.png" />}
 				buttonText={t("home.childminder.cta")}
 				buttonHref="/Tagesmutter"
 			/>
@@ -20,18 +20,18 @@ export default function Home() {
 			<Section
 				isReverse={true}
 				backgroundColor="creme"
-				headline={<Title text={t("premises.title")} />}
+				headline={<Title type="h1" text={t("premises.title")} />}
 				text={t("home.premises.content")}
-				image={<img src="/assets/home/02.svg" />}
+				image={<img src="/assets/home/02.png" />}
 				buttonText={t("home.premises.cta")}
 				buttonHref="/Raeumlichkeiten"
 			/>
 
 			<Section
 				backgroundColor="white"
-				headline={<Title text={t("care.title")} />}
+				headline={<Title type="h1" text={t("care.title")} />}
 				text={t("home.care.content")}
-				image={<img src="/assets/home/03.svg" />}
+				image={<img src="/assets/home/03.png" />}
 				buttonText={t("home.care.cta")}
 				buttonHref="/Betreuung"
 			/>
@@ -39,7 +39,7 @@ export default function Home() {
 			<Section
 				isReverse={true}
 				backgroundColor="creme"
-				headline={<Title text={t("contact.title")} />}
+				headline={<Title type="h1" text={t("contact.title")} />}
 				text={t("home.contact.content")}
 				buttonText={t("home.contact.cta")}
 				buttonHref="/Kontakt"
