@@ -9,7 +9,7 @@ export default function ColorfulText({
 	as,
 }: {
 	text: string;
-	align: "center" | "left" | "right";
+	align?: "center" | "left" | "right";
 } & Pick<TypographyProps, "as" | "type">) {
 	return (
 		<Typography
