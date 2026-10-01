@@ -1,9 +1,11 @@
 "use client";
 import { Section, Hero, ColorfulText, Testimonials } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
+import { getYearsPassed } from "@/utils";
 
 export default function Home() {
 	const { t } = useTranslation();
+	const childminderAge = getYearsPassed("1977-06-12");
 
 	return (
 		<>
@@ -14,7 +16,7 @@ export default function Home() {
 				headline={
 					<ColorfulText type="h1" text={t("childminder.title")} />
 				}
-				text={t("home.childminder.content")}
+				text={t("home.childminder.content", { age: childminderAge })}
 				image={<img src="/assets/home/01.png" />}
 				buttonText={t("home.childminder.cta")}
 				buttonHref="/Tagesmutter"

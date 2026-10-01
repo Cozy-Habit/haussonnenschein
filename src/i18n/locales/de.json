@@ -22,7 +22,7 @@
 		},
 		"childminder": {
 			"title": "Tagesmutter",
-			"content": "Mein Name ist Sandra Diner und ich bin 49 Jahre alt. Als ursprünglich gelernte und selbständige Raumausstatter-Meisterin habe ich durch meine Kinder meine eigentliche Berufung entdeckt und lieben gelernt: \n\n Die Kindertagespflege",
+			"content": "Mein Name ist Sandra Diner und ich bin {age} Jahre alt. Als ursprünglich gelernte und selbständige Raumausstatter-Meisterin habe ich durch meine Kinder meine eigentliche Berufung entdeckt und lieben gelernt: \n\n Die Kindertagespflege",
 			"cta": "Mehr über Sandra"
 		},
 		"premises": {
@@ -49,7 +49,7 @@
 		},
 		"qualifications": {
 			"title": "Meine Qualifikationen",
-			"content": "Neben über 14 Jahren Erfahrung im Bereich der Tagespflege kann ich die folgenden Qualifikationen vorweisen:",
+			"content": "Neben über {experienceYears} Jahren Erfahrung im Bereich der Tagespflege kann ich die folgenden Qualifikationen vorweisen:",
 			"items": "Erste-Hilfe-Schulung; Kolloquium zur QHB qualifizierten Kindertagespflegeperson; Abschluss des staatlich anerkannten Fernlehrgangs „Erziehungsberatung“;Zertifikat zur „Qualifizierten Tagespflegeperson“"
 		},
 		"family": {
@@ -58,7 +58,7 @@
 		},
 		"familyDog": {
 			"title": "Familienhund",
-			"content": "Ein weiteres Mitglied der Familie ist unser 10 Jahre alter Familienhund Dean oder auch Deany genannt. \n\n Er ist ein absoluter Kindermagnet und mein Assistent in der täglichen Betreuung. \n\n Zudem ist er eine sehr liebevolle und ruhige Seele und ist den Umgang mit Kindern seit er klein ist gewohnt. \n\n Die Kinder werden sich also rasch an ihn gewöhnen und den Umgang mit diesem erlernen."
+			"content": "Ein weiteres Mitglied der Familie ist unser {age} Jahre alter Familienhund Dean oder auch Deany genannt. \n\n Er ist ein absoluter Kindermagnet und mein Assistent in der täglichen Betreuung. \n\n Zudem ist er eine sehr liebevolle und ruhige Seele und ist den Umgang mit Kindern seit er klein ist gewohnt. \n\n Die Kinder werden sich also rasch an ihn gewöhnen und den Umgang mit diesem erlernen."
 		}
 	},
 	"premises": {

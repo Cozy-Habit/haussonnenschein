@@ -51,7 +51,7 @@ export default function Testimonials() {
 		},
 	];
 
-	const [currentIndex, setCurrentIndex] = useState(1);
+	const [currentIndex, setCurrentIndex] = useState(0);
 	const [firstRender, setFirstRender] = useState(true);
 	const ref = useRef(null);
 	const isLast = TESTIMONIALS.length - 1 === currentIndex;

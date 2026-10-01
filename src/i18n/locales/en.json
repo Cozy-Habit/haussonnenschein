@@ -22,7 +22,7 @@
 		},
 		"childminder": {
 			"title": "Childminder",
-			"content": "My name is Sandra Diner and I am 49 years old. Originally trained as a self-employed master interior decorator, having my own children led me to discover and fall in love with my true calling:",
+			"content": "My name is Sandra Diner and I am {age} years old. Originally trained as a self-employed master interior decorator, having my own children led me to discover and fall in love with my true calling:",
 			"highlight": "Child Daycare",
 			"cta": "More About Sandra"
 		},
@@ -50,7 +50,7 @@
 		},
 		"qualifications": {
 			"title": "My Qualifications",
-			"content": "Along with over 14 years of experience in child daycare, I hold the following qualifications:",
+			"content": "Along with over {experienceYears} years of experience in child daycare, I hold the following qualifications:",
 			"items": "First Aid Training; Colloquium for QHB-Certified Child Daycare Providers; Graduate of the State-Recognized Distance Learning Course in Educational Counseling; Certificate as a Qualified Child Daycare Provider"
 		},
 		"family": {
@@ -59,7 +59,7 @@
 		},
 		"familyDog": {
 			"title": "Family Dog",
-			"content": "Another member of our family is our 10-year-old family dog Dean, also known as Deany.\n\n He is a total magnet for kids and my trusty assistant in our daily routine.\n\n He is a gentle, calm soul and has been used to being around children since he was a puppy.\n\n The children quickly get used to him and learn how to interact with a dog safely and respectfully."
+			"content": "Another member of our family is our {age}-year-old family dog Dean, also known as Deany.\n\n He is a total magnet for kids and my trusty assistant in our daily routine.\n\n He is a gentle, calm soul and has been used to being around children since he was a puppy.\n\n The children quickly get used to him and learn how to interact with a dog safely and respectfully."
 		}
 	},
 	"premises": {

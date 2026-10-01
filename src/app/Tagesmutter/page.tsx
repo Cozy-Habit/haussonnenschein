@@ -2,10 +2,13 @@
 
 import { Section, ColorfulText } from "@/components";
 import { useTranslation } from "@/i18n/LanguageProvider";
+import { getYearsPassed } from "@/utils";
 import Image from "next/image";
 
 export default function Tagesmutter() {
 	const { t } = useTranslation();
+	const dogAge = getYearsPassed("2016-06-01");
+	const experienceYears = getYearsPassed("2012-06-01");
 
 	return (
 		<>
@@ -28,7 +31,9 @@ export default function Tagesmutter() {
 				backgroundColor="white"
 				text={
 					<>
-						{t("childminder.qualifications.content")}
+						{t("childminder.qualifications.content", {
+							experienceYears,
+						})}
 						<br />
 						<br />
 
@@ -69,7 +74,7 @@ export default function Tagesmutter() {
 			/>
 			<Section
 				backgroundColor="white"
-				text={t("childminder.familyDog.content")}
+				text={t("childminder.familyDog.content", { age: dogAge })}
 				image={
 					<Image
 						width={284}
